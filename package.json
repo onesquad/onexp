@@ -1,6 +1,6 @@
 {
   "name": "onexp",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "The original OneSquad experience",
   "author": "vinay0x",
   "license": "MIT",
@@ -44,6 +44,7 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
+    "node-sass": "^4.13.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
