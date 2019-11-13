@@ -1,4 +1,4 @@
-# onexp
+# OneXP
 
 > The original OneSquad experience
 
@@ -15,16 +15,26 @@ npm install --save onexp
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'onexp'
+import Button from 'onexp'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Button label="Click me!" />
     )
   }
 }
 ```
+
+## Development
+Make changes to component library code in `src` folder.
+Make changes to example preview code in `example` folder.
+
+Run Rollup compile and watcher using `yarn start` from root folder.
+Run development server for example preview using `yarn start` from `example` folder.
+
+All file changes are automatically recompiled and the preview server automatically reloads.
+Preview changes at `localhost:3000`
 
 ## License
 
