@@ -26,12 +26,17 @@ class Example extends Component {
 }
 ```
 
+## Notes 
+This project relies on the amazing [blueprintjs](https://blueprintjs.com/) for all overlay components, until we hit a roadblock and decides to build it ourself.
+
 ## Development
 Make changes to component library code in `src` folder.
 Make changes to example preview code in `example` folder.
 
-Run Rollup compile and watcher using `yarn start` from root folder.
-Run development server for example preview using `yarn start` from `example` folder.
+Run `yarn dev` from `root` which runs the following automatically.
+
+- Run Rollup compile and watcher using `yarn start` from root folder.
+- Run development server for example preview using `yarn start` from `example` folder.
 
 All file changes are automatically recompiled and the preview server automatically reloads.
 Preview changes at `localhost:3000`
