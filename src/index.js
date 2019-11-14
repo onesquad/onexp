@@ -1,4 +1,4 @@
 import './styles/index.scss';
 import Button from './Components/Button'
-
-export { Button }
+import { Navbar } from '@blueprintjs/core';
+export { Button, Navbar }
