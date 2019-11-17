@@ -1,4 +1,162 @@
-.xp-button--primary  {
-  background-color: $xp-color--primary;
+.xp-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5 !important;
+}
+
+.xp-button.xp-button--full-width {
+  width: 100%;
+  @include justify-content(center);
+}
+
+.xp-button {
+  @include inline-flex();
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include align-items(center);
+  padding: 4px 24px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: $font-weight-normal;
+  transition: $xp-default-transition;
+  border-radius: $border-radius-base;
+  text-transform: none;
+  position: relative;
+  cursor: pointer;
+  @include user-select(none);
+
+  svg {
+    vertical-align: middle;
+    line-height: inherit;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.xp-button.xp-button--primary {
   color: $xp-color--white;
+  background-color: $xp-color--primary;
+  border: thin solid $xp-color--primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $xp-color--white;
+    border: thin solid darken($xp-color--primary, 5%);
+    background-color: darken($xp-color--primary, 5%);
+  }
+}
+
+.xp-button.xp-button--dark {
+  color: $xp-color--white;
+  background-color: $xp-color--primary-dark;
+  border: thin solid $xp-color--primary-dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $xp-color--white;
+    border: thin solid darken($xp-color--primary-dark, 5%);
+    background-color: darken($xp-color--primary-dark, 5%);
+  }
+}
+
+.xp-button.xp-button--light {
+  color: $xp-color--text;
+  background-color: $xp-color--white;
+  border: thin solid $xp-color--white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $xp-color--text;
+    border: thin solid $xp-color--highlight;
+    background-color: $xp-color--highlight;
+  }
+
+  &.xp-button--loading {
+    color: transparent;
+    border: thin solid $xp-color--highlight;
+    background-color: $xp-color--highlight;
+  }
+
+  .xp-button--loader__dots {
+    span {
+      background-color: $xp-color--black;
+    }
+  }
+}
+
+
+.xp-button__icon-only {
+  cursor: pointer;
+  display: inline-block;
+  transition: $xp-default-transition;
+  opacity: 0.8;
+  background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    opacity: 1;
+  }
+}
+
+.xp-button--loader {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &.xp-button--loader__dots {
+    span {
+      width: 6px;
+      height: 6px;
+      background-color: $xp-color--white;
+      border-radius: 100%;
+      display: inline-block;
+      animation: btn-bouncedelay 1s infinite ease-in-out both;
+      margin: 0 2px 0 0;
+
+      &:nth-child(1) {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+      }
+
+      &:nth-child(1) {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+      }
+    }
+  }
+}
+
+@keyframes btn-bouncedelay {
+
+  0%,
+  80%,
+  100% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+}
+
+@mixin loader__dots--dark {
+  span {
+    width: 16px;
+    height: 16px;
+    background-color: $xp-color--black;
+    margin: 0 2px;
+  }
 }
