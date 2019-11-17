@@ -1,3 +1,1017 @@
+
+//Spacing
+
+//Reset
+@mixin mx--zero {
+    @include margin(0);
+}
+
+@mixin mx--auto {
+    @include margin(auto);
+}
+
+@mixin mt--zero {
+    @include margin(0 null null null);
+}
+
+@mixin mb--zero {
+    @include margin(null null 0 null);
+}
+
+@mixin ml--zero {
+    @include margin(null null null 0);
+}
+
+@mixin mr--zero {
+    @include margin(null 0 null null);
+}
+
+@mixin mtb--zero {
+    @include margin(0 null);
+}
+
+@mixin mlr--zero {
+    @include margin(null 0);
+}
+
+@mixin px--zero {
+    @include padding(0);
+}
+
+@mixin pt--zero {
+    @include padding(0 null null null);
+}
+
+@mixin pb--zero {
+    @include padding(null null 0 null);
+}
+
+@mixin pr--zero {
+    @include padding(null 0 null null);
+}
+
+@mixin pl--zero {
+    @include padding(0 null null 0);
+}
+
+@mixin ptb--zero {
+    @include padding(0 null);
+}
+
+@mixin plr--zero {
+    @include padding(null 0);
+}
+
+//Margin All
+
+@mixin mx--xs {
+    @include margin(4px);
+}
+
+@mixin mx--sm {
+    @include margin(8px);
+}
+
+@mixin mx--md {
+    @include margin(12px);
+}
+
+@mixin mx--lg {
+    @include margin(16px);
+}
+
+@mixin mx--xl {
+    @include margin(20px);
+}
+
+//Padding All
+
+@mixin px--xs {
+    @include padding(4px);
+}
+
+@mixin px--sm {
+    @include padding(8px);
+}
+
+@mixin px--md {
+    @include padding(12px);
+}
+
+@mixin px--lg {
+    @include padding(16px);
+}
+
+@mixin px--xl {
+    @include padding(20px);
+}
+
+// Margin Top & Bottom
+@mixin mtb--xs {
+    @include margin(4px null);
+}
+
+@mixin mtb--sm {
+    @include margin(8px null);
+}
+
+@mixin mtb--md {
+    @include margin(12px null);
+}
+
+@mixin mtb--lg {
+    @include margin(16px null);
+}
+
+@mixin mtb--xl {
+    @include margin(20px null);
+}
+
+
+// Margin Left & Right
+@mixin mlr--xs {
+    @include margin(null 4px);
+}
+
+@mixin mlr--sm {
+    @include margin(null 8px);
+}
+
+@mixin mlr--md {
+    @include margin(null 12px);
+}
+
+@mixin mlr--lg {
+    @include margin(null 16px);
+}
+
+@mixin mlr--xl {
+    @include margin(null 20px);
+}
+
+
+
+// Margin Left
+
+@mixin ml--xs {
+    @include margin(null null null 4px);
+}
+
+@mixin ml--sm {
+    @include margin(null null null 8px);
+}
+
+@mixin ml--md {
+    @include margin(null null null 12px);
+}
+
+@mixin ml--lg {
+    @include margin(null null null 16px);
+}
+
+@mixin ml--xl {
+    @include margin(null null null 20px);
+}
+
+
+
+// Margin Right
+@mixin mr--xs {
+    @include margin(null 4px null null);
+}
+
+@mixin mr--sm {
+    @include margin(null 8px null null);
+}
+
+@mixin mr--md {
+    @include margin(null 12px null null);
+}
+
+@mixin mr--lg {
+    @include margin(null 16px null null);
+}
+
+@mixin mr--xl {
+    @include margin(null 20px null null);
+}
+
+
+
+// Margin Bottom
+
+@mixin mb--xs {
+    @include margin(null null 4px null);
+}
+
+@mixin mb--sm {
+    @include margin(null null 8px null);
+}
+
+@mixin mb--md {
+    @include margin(null null 12px null);
+}
+
+@mixin mb--lg {
+    @include margin(null null 16px null);
+}
+
+@mixin mb--xl {
+    @include margin(null null 20px 0);
+}
+
+// Margin Top
+
+@mixin mt--xs {
+    @include margin(4px null null null);
+}
+
+@mixin mt--sm {
+    @include margin(8px null null null);
+}
+
+@mixin mt--md {
+    @include margin(12px null null null);
+}
+
+@mixin mt--lg {
+    @include margin(16px null null null);
+}
+
+@mixin mt--xl {
+    @include margin(20px null null null);
+}
+
+
+//Padding
+// Padding Top & Bottom
+@mixin ptb--xs {
+    @include padding(4px null);
+}
+
+@mixin ptb--sm {
+    @include padding(8px null);
+}
+
+@mixin ptb--md {
+    @include padding(12px null);
+}
+
+@mixin ptb--lg {
+    @include padding(16px null);
+}
+
+@mixin ptb--xl {
+    @include padding(20px null);
+}
+
+
+// Padding Left & Right
+@mixin plr--xs {
+    @include padding(null 4px);
+}
+
+@mixin plr--sm {
+    @include padding(null 8px);
+}
+
+@mixin plr--md {
+    @include padding(null 12px);
+}
+
+@mixin plr--lg {
+    @include padding(null 16px);
+}
+
+@mixin plr--xl {
+    @include padding(null 20px);
+}
+
+
+
+// Padding Left
+
+@mixin pl--xs {
+    @include padding(null null null 4px);
+}
+
+@mixin pl--sm {
+    @include padding(null null null 8px);
+}
+
+@mixin pl--md {
+    @include padding(null null null 12px);
+}
+
+@mixin pl--lg {
+    @include padding(null null null 16px);
+}
+
+@mixin pl--xl {
+    @include padding(null null null 20px);
+}
+
+
+
+// Padding Right
+@mixin pr--xs {
+    @include padding(null 4px null null);
+}
+
+@mixin pr--sm {
+    @include padding(null 8px null null);
+}
+
+@mixin pr--md {
+    @include padding(null 12px null null);
+}
+
+@mixin pr--lg {
+    @include padding(null 16px null null);
+}
+
+@mixin pr--xl {
+    @include padding(null 20px null null);
+}
+
+
+
+// Padding Bottom
+
+@mixin pb--xs {
+    @include padding(null null 4px null);
+}
+
+@mixin pb--sm {
+    @include padding(null null 8px null);
+}
+
+@mixin pb--md {
+    @include padding(null null 12px null);
+}
+
+@mixin pb--lg {
+    @include padding(null null 16px null);
+}
+
+@mixin pb--xl {
+    @include padding(null null 20px 0);
+}
+
+// Padding Top
+
+@mixin pt--xs {
+    @include padding(4px null null null);
+}
+
+@mixin pt--sm {
+    @include padding(8px null null null);
+}
+
+@mixin pt--md {
+    @include padding(12px null null null);
+}
+
+@mixin pt--lg {
+    @include padding(16px null null null);
+}
+
+@mixin pt--xl {
+    @include padding(20px null null null);
+}
+
+// Classes
+
+//Reset
+.mx--zero {
+    @include mx--zero;
+}
+
+.mtb--zero {
+    @include mtb--zero;
+}
+
+.mlr--zero {
+    @include mlr--zero;
+}
+
+.mt--zero {
+    @include mt--zero;
+}
+
+.mb--zero {
+    @include mb--zero;
+}
+
+.ml--zero {
+    @include ml--zero;
+}
+
+.mr--zero {
+    @include mr--zero;
+}
+
+//Margin Auto
+
+.mx--auto {
+    @include mx--auto;
+}
+
+//Margin All
+.mx--xs {
+    @include mx--xs;
+}
+
+.mx--sm {
+    @include mx--sm;
+}
+
+.mx--md {
+    @include mx--md;
+}
+
+.mx--lg {
+    @include mx--lg;
+}
+
+.mx--xl {
+    @include mx--xl;
+}
+
+// Margin Top & Bottom
+.mtb--xs {
+    @include mtb--xs;
+}
+
+.mtb--sm {
+    @include mtb--sm;
+}
+
+.mtb--md {
+    @include mtb--md;
+}
+
+.mtb--lg {
+    @include mtb--lg;
+}
+
+.mtb--xl {
+    @include mtb--xl;
+}
+
+
+// Margin Left & Right
+.mlr--xs {
+    @include mlr--xs;
+}
+
+.mlr--sm {
+    @include mlr--sm;
+}
+
+.mlr--md {
+    @include mlr--md;
+}
+
+.mlr--lg {
+    @include mlr--lg;
+}
+
+.mlr--xl {
+    @include mlr--xl;
+}
+
+
+
+// Margin Left
+
+.ml--xs {
+    @include ml--xs;
+}
+
+.ml--sm {
+    @include ml--sm;
+}
+
+.ml--md {
+    @include ml--md;
+}
+
+.ml--lg {
+    @include ml--lg;
+}
+
+.ml--xl {
+    @include ml--xl;
+}
+
+
+
+// Margin Right
+.mr--xs {
+    @include mr--xs;
+}
+
+.mr--sm {
+    @include mr--sm;
+}
+
+.mr--md {
+    @include mr--md;
+}
+
+.mr--lg {
+    @include mr--lg;
+}
+
+.mr--xl {
+    @include mr--xl;
+}
+
+
+
+// Margin Bottom
+
+.mb--xs {
+    @include mb--xs;
+}
+
+.mb--sm {
+    @include mb--sm;
+}
+
+.mb--md {
+    @include mb--md;
+}
+
+.mb--lg {
+    @include mb--lg;
+}
+
+.mb--xl {
+    @include mb--xl;
+}
+
+// Margin Top
+
+.mt--xs {
+    @include mt--xs;
+}
+
+.mt--sm {
+    @include mt--sm;
+}
+
+.mt--md {
+    @include mt--md;
+}
+
+.mt--lg {
+    @include mt--lg;
+}
+
+.mt--xl {
+    @include mt--xl;
+}
+
+//Padding
+
+//Reset
+.px--zero {
+    @include px--zero;
+}
+
+.pt--zero {
+    @include pt--zero;
+}
+
+.pb--zero {
+    @include pb--zero;
+}
+
+.pr--zero {
+    @include pr--zero;
+}
+
+.pl--zero {
+    @include pl--zero;
+}
+
+.ptb--zero {
+    @include ptb--zero;
+}
+
+.plr--zero {
+    @include plr--zero;
+}
+
+//Padding All
+.px--xs {
+    @include px--xs;
+}
+
+.px--sm {
+    @include px--sm;
+}
+
+.px--md {
+    @include px--md;
+}
+
+.px--lg {
+    @include px--lg;
+}
+
+.px--xl {
+    @include px--xl;
+}
+
+
+// Padding Top & Bottom
+.ptb--xs {
+    @include ptb--xs;
+}
+
+.ptb--sm {
+    @include ptb--sm;
+}
+
+.ptb--md {
+    @include ptb--md;
+}
+
+.ptb--lg {
+    @include ptb--lg;
+}
+
+.ptb--xl {
+    @include ptb--xl;
+}
+
+
+// Padding Left & Right
+.plr--xs {
+    @include plr--xs;
+}
+
+.plr--sm {
+    @include plr--sm;
+}
+
+.plr--md {
+    @include plr--md;
+}
+
+.plr--lg {
+    @include plr--lg;
+}
+
+.plr--xl {
+    @include plr--xl;
+}
+
+
+
+// Padding Left
+
+.pl--xs {
+    @include pl--xs;
+}
+
+.pl--sm {
+    @include pl--sm;
+}
+
+.pl--md {
+    @include pl--md;
+}
+
+.pl--lg {
+    @include pl--lg;
+}
+
+.pl--xl {
+    @include pl--xl;
+}
+
+
+
+// Padding Right
+.pr--xs {
+    @include pr--xs;
+}
+
+.pr--sm {
+    @include pr--sm;
+}
+
+.pr--md {
+    @include pr--md;
+}
+
+.pr--lg {
+    @include pr--lg;
+}
+
+.pr--xl {
+    @include pr--xl;
+}
+
+
+
+// Padding Bottom
+.pb--xs {
+    @include pb--xs;
+}
+
+.pb--sm {
+    @include pb--sm;
+}
+
+.pb--md {
+    @include pb--md;
+}
+
+.pb--lg {
+    @include pb--lg;
+}
+
+.pb--xl {
+    @include pb--xl;
+}
+
+// Padding Top
+
+.pt--xs {
+    @include pt--xs;
+}
+
+.pt--sm {
+    @include pt--sm;
+}
+
+.pt--md {
+    @include pt--md;
+}
+
+.pt--lg {
+    @include pt--lg;
+}
+
+.pt--xl {
+    @include pt--xl;
+}
+
+//Wrapper
+
+//Padding
+
+//All
+.wp--xs {
+    @include padding(16px);
+}
+.wp--sm {
+    @include padding(24px);
+}
+.wp--md {
+    @include padding(32px);
+}
+.wp--lg {
+    @include padding(48px);
+}
+.wp--xl {
+    @include padding(64px);
+}
+
+
+//Top & Bottom
+.wptb--xs {
+    @include padding(16px null);
+}
+.wptb--sm {
+    @include padding(24px null);
+}
+.wptb--md {
+    @include padding(32px null);
+}
+.wptb--lg {
+    @include padding(48px null);
+}
+.wptb--xl {
+    @include padding(64px null);
+}
+
+// Left & Right
+
+.wplr--xs {
+    @include padding(null 16px);
+}
+.wplr--sm {
+    @include padding(null 24px);
+}
+.wplr--md {
+    @include padding(null 32px);
+}
+.wplr--lg {
+    @include padding(null 48px);
+}
+.wplr--xl {
+    @include padding(null 64px);
+}
+
+//Top
+.wpt--xs {
+    @include padding(16px null null null);
+}
+.wpt--sm {
+    @include padding(24px null null null);
+}
+.wpt--md {
+    @include padding(32px null null null);
+}
+.wpt--lg {
+    @include padding(48px null null null);
+}
+.wpt--xl {
+    @include padding(64px null null null);
+}
+
+//Bottom
+.wpb--xs {
+    @include padding(null null 16px null);
+}
+.wpb--sm {
+    @include padding(null null 24px null);
+}
+.wpb--md {
+    @include padding(null null 32px null);
+}
+.wpb--lg {
+    @include padding(null null 48px null);
+}
+.wpb--xl {
+    @include padding(null null 64px null);
+}
+
+//Left
+.wpl--xs {
+    @include padding(null null null 16px);
+}
+.wpl--sm {
+    @include padding(null null null 24px);
+}
+.wpl--md {
+    @include padding(null null null 32px);
+}
+.wpl--lg {
+    @include padding(null null null 48px);
+}
+.wpl--xl {
+    @include padding(null null null 64px);
+}
+
+//Right
+.wpr--xs {
+    @include padding(null 16px null null);
+}
+.wpr--sm {
+    @include padding(null 24px null null);
+}
+.wpr--md {
+    @include padding(null 32px null null);
+}
+.wpr--lg {
+    @include padding(null 48px null null);
+}
+.wpr--xl {
+    @include padding(null 64px null null);
+}
+
+
+// Margin
+
+//All
+.wm--xs {
+    @include margin(16px);
+}
+.wm--sm {
+    @include margin(24px);
+}
+.wm--md {
+    @include margin(32px);
+}
+.wm--lg {
+    @include margin(48px);
+}
+.wm--xl {
+    @include margin(64px);
+}
+
+
+//Top & Bottom
+.wmtb--xs {
+    @include margin(16px null);
+}
+.wmtb--sm {
+    @include margin(24px null);
+}
+.wmtb--md {
+    @include margin(32px null);
+}
+.wmtb--lg {
+    @include margin(48px null);
+}
+.wmtb--xl {
+    @include margin(64px null);
+}
+
+// Left & Right
+
+.wmlr--xs {
+    @include margin(null 16px);
+}
+.wmlr--sm {
+    @include margin(null 24px);
+}
+.wmlr--md {
+    @include margin(null 32px);
+}
+.wmlr--lg {
+    @include margin(null 48px);
+}
+.wmlr--xl {
+    @include margin(null 64px);
+}
+
+//Top
+.wmt--xs {
+    @include margin(16px null null null);
+}
+.wmt--sm {
+    @include margin(24px null null null);
+}
+.wmt--md {
+    @include margin(32px null null null);
+}
+.wmt--lg {
+    @include margin(48px null null null);
+}
+.wmt--xl {
+    @include margin(64px null null null);
+}
+
+//Bottom
+.wmb--xs {
+    @include margin(null null 16px null);
+}
+.wmb--sm {
+    @include margin(null null 24px null);
+}
+.wmb--md {
+    @include margin(null null 32px null);
+}
+.wmb--lg {
+    @include margin(null null 48px null);
+}
+.wmb--xl {
+    @include margin(null null 64px null);
+}
+
+//Left
+.wml--xs {
+    @include margin(null null null 16px);
+}
+.wml--sm {
+    @include margin(null null null 24px);
+}
+.wml--md {
+    @include margin(null null null 32px);
+}
+.wml--lg {
+    @include margin(null null null 48px);
+}
+.wml--xl {
+    @include margin(null null null 64px);
+}
+
+//Right
+.wmr--xs {
+    @include margin(null 16px null null);
+}
+.wmr--sm {
+    @include margin(null 24px null null);
+}
+.wmr--md {
+    @include margin(null 32px null null);
+}
+.wmr--lg {
+    @include margin(null 48px null null);
+}
+.wmr--xl {
+    @include margin(null 64px null null);
+}
+
+
 //Border
 
 //Transparent

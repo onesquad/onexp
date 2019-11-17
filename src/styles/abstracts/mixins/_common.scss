@@ -1,3 +1,7 @@
+@import './utilities/directional-property';
+@import './utilities/compact-shorthand';
+@import './utilities/contains-falsy';
+
 @mixin user-select($value: text) {
     -webkit-user-select: $value;
     /* Chrome all / Safari all */
