@@ -27,7 +27,7 @@ export default class App extends Component {
               type='primary'
               text='Primary Button'
               extraClass='mr--lg'
-              isLoading
+              loading
             />
           </div>
           <div className='fx-row mb--lg'>
@@ -46,7 +46,7 @@ export default class App extends Component {
               type='dark'
               text='Dark Button'
               extraClass='mr--lg'
-              isLoading
+              loading
             />
           </div>
           <div className='fx-row mb--lg'>
@@ -65,7 +65,7 @@ export default class App extends Component {
               type='light'
               text='Light Button'
               extraClass='mr--lg'
-              isLoading
+              loading
             />
           </div>
           <div className="fx-row mb--lg">

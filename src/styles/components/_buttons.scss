@@ -94,13 +94,13 @@
 }
 
 
-.xp-button.xp-button--icon-only {
+.xp-button.xp-button--icon {
   cursor: pointer;
   padding: 0 2px;
   transition: $xp-default-transition;
   opacity: 0.8;
   background-color: transparent;
-
+  box-shadow: none;
   &:hover,
   &:active,
   &:focus {
