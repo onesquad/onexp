@@ -92,9 +92,9 @@
 }
 
 
-.xp-button__icon-only {
+.xp-button.xp-button--icon-only {
   cursor: pointer;
-  display: inline-block;
+  padding: 0 2px;
   transition: $xp-default-transition;
   opacity: 0.8;
   background-color: transparent;

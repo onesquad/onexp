@@ -56,7 +56,7 @@ const Text = ({
   }
 
   return (
-    <>
+    <React.Fragment>
       {isJumbo &&
         <h1
           className={classnames({ ...classList })}
@@ -105,7 +105,7 @@ const Text = ({
         >
           {children}
         </p>}
-    </>
+    </React.Fragment>
   )
 }
 

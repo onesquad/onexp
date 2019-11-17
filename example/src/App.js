@@ -68,6 +68,14 @@ export default class App extends Component {
               isLoading
             />
           </div>
+          <div className="fx-row mb--lg">
+            <Text size="h4" color="black" weight="normal" extraClass="mr--sm">Icon Button:</Text>
+            <Button
+              type="icon"
+              extraClass="mr--lg"
+              icon="calendar"
+            />
+          </div>
         </div>
       </div>
     )

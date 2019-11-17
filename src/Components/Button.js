@@ -39,24 +39,24 @@ const Button = ({
   const iconProps = {
     icon,
     iconSize: iconSize || 14,
-    color: iconColor || (isLightBtn ? 'black' : 'white')
-  }
+    color: iconColor || (isLightBtn || isIconBtn ) ? 'black' : 'white',
+  };
 
   let innerContent
 
   if (icon) {
     if (posRight) {
-      innerContent = <>{text}<Icon {...iconProps} style={{ marginLeft: 8 }} /></>
+      innerContent = <React.Fragment>{text}<Icon {...iconProps} className={classnames({ 'ml--sm': !isIconBtn })}/></React.Fragment>;
     } else {
-      innerContent = <><Icon {...iconProps} style={{ marginRight: 8 }} />{text}</>
+      innerContent = <React.Fragment><Icon {...iconProps} className={classnames({ 'mr--sm': !isIconBtn })}/>{text}</React.Fragment>;
     }
   } else {
-    innerContent = <>{text}</>
+    innerContent = <React.Fragment>{text}</React.Fragment>
   }
 
-  // Handling Loader
-  if (isLoading) {
-    innerContent = <>{innerContent}<ButtonLoader /></>
+  //Handling Loader
+  if (isLoading && !isIconBtn) {
+    innerContent = <React.Fragment>{innerContent}<ButtonLoader/></React.Fragment>;
   }
 
   const handleClick = (e) => {
