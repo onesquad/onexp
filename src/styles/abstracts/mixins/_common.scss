@@ -1,0 +1,13 @@
+@import './utilities/directional-property';
+@import './utilities/compact-shorthand';
+@import './utilities/contains-falsy';
+
+@mixin user-select($value: text) {
+    -webkit-user-select: $value;
+    /* Chrome all / Safari all */
+    -moz-user-select: $value;
+    /* Firefox all */
+    -ms-user-select: $value;
+    /* IE 10+ */
+    user-select: $value;
+}

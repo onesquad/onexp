@@ -1,0 +1,278 @@
+@import './mixins/flex';
+
+// ========= General ========
+
+.fx-row {
+  @include fx-row;
+}
+
+.fx-column {
+  @include fx-column;
+}
+
+//Justify Content
+.fx-jc--start {
+  @include fx-jc--start;
+}
+
+.fx-jc--end {
+  @include fx-jc--end;
+}
+
+.fx-jc--center {
+  @include fx-jc--center;
+}
+
+.fx-jc--between {
+  @include fx-jc--between;
+}
+
+.fx-jc--around {
+  @include fx-jc--around;
+}
+
+
+//Align Items
+.fx-ai--start {
+  @include fx-ai--start;
+}
+
+.fx-ai--end {
+  @include fx-ai--end;
+}
+
+.fx-ai--center {
+  @include fx-ai--center;
+}
+
+.fx-ai--baseline {
+  @include fx-ai--baseline;
+}
+
+.fx-ai--stretch {
+  @include fx-ai--stretch;
+}
+
+//Align Content
+.fx-ac--start {
+  @include fx-ac--start;
+}
+
+.fx-ac--end {
+  @include fx-ac--end;
+}
+
+.fx-ac--center {
+  @include fx-ac--center;
+}
+
+.fx-ac--between {
+  @include fx-ac--between;
+}
+
+.fx-ac--around {
+  @include fx-ac--around;
+}
+
+.fx-ac--stretch {
+  @include fx-ac--stretch;
+}
+
+//Align Self
+.fx-as--auto {
+  @include fx-as--auto;
+}
+
+.fx-as--start {
+  @include fx-as--start;
+}
+
+.fx-as--end {
+  @include fx-as--end;
+}
+
+.fx-as--center {
+  @include fx-as--center;
+}
+
+.fx-as--baseline {
+  @include fx-as--baseline;
+}
+
+.fx-as--stretch {
+  @include fx-as--stretch;
+}
+
+//Wrap
+
+.fx--wrap {
+  @include fx--wrap;
+}
+
+.fx--nowrap {
+  @include fx--nowrap;
+}
+
+.fx--wrapreverse {
+  @include fx--wrapreverse;
+}
+
+//Grow 
+
+.fx-grow {
+  @include fx-grow;
+}
+
+.fx-grow-1 {
+  @include fx-grow-1;
+}
+
+//Shrink
+
+.fx-shrink {
+  @include fx-shrink;
+}
+
+.fx-shrink-0 {
+  @include fx-shrink-0;
+}
+
+
+// ========= Mobile ========
+
+@include mob-tab-portrait {
+  .fx-mob-row {
+    @include fx-row;
+  }
+
+  .fx-mob-column {
+    @include fx-column;
+  }
+
+  //Justify Content
+  .fx-mob-jc--start {
+    @include fx-jc--start;
+  }
+
+  .fx-mob-jc--end {
+    @include fx-jc--end;
+  }
+
+  .fx-mob-jc--center {
+    @include fx-jc--center;
+  }
+
+  .fx-mob-jc--between {
+    @include fx-jc--between;
+  }
+
+  .fx-mob-jc--around {
+    @include fx-jc--around;
+  }
+
+
+  //Align Items
+  .fx-mob-ai--start {
+    @include fx-ai--start;
+  }
+
+  .fx-mob-ai--end {
+    @include fx-ai--end;
+  }
+
+  .fx-mob-ai--center {
+    @include fx-ai--center;
+  }
+
+  .fx-mob-ai--baseline {
+    @include fx-ai--baseline;
+  }
+
+  .fx-mob-ai--stretch {
+    @include fx-ai--stretch;
+  }
+
+  //Align Content
+  .fx-mob-ac--start {
+    @include fx-ac--start;
+  }
+
+  .fx-mob-ac--end {
+    @include fx-ac--end;
+  }
+
+  .fx-mob-ac--center {
+    @include fx-ac--center;
+  }
+
+  .fx-mob-ac--between {
+    @include fx-ac--between;
+  }
+
+  .fx-mob-ac--around {
+    @include fx-ac--around;
+  }
+
+  .fx-mob-ac--stretch {
+    @include fx-ac--stretch;
+  }
+
+  //Align Self
+  .fx-mob-as--auto {
+    @include fx-as--auto;
+  }
+
+  .fx-mob-as--start {
+    @include fx-as--start;
+  }
+
+  .fx-mob-as--end {
+    @include fx-as--end;
+  }
+
+  .fx-mob-as--center {
+    @include fx-as--center;
+  }
+
+  .fx-mob-as--baseline {
+    @include fx-as--baseline;
+  }
+
+  .fx-mob-as--stretch {
+    @include fx-as--stretch;
+  }
+
+  //Wrap
+
+  .fx-mob--wrap {
+    @include fx--wrap;
+  }
+
+  .fx-mob--nowrap {
+    @include fx--nowrap;
+  }
+
+  .fx-mob--wrapreverse {
+    @include fx--wrapreverse;
+  }
+
+  //Grow 
+
+  .fx-mob-grow {
+    @include fx-grow;
+  }
+
+  .fx-mob-grow-1 {
+    @include fx-grow-1;
+  }
+
+  //Shrink
+
+  .fx-mob-shrink {
+    @include fx-shrink;
+  }
+
+  .fx-mob-shrink-0 {
+    @include fx-shrink-0;
+  }
+}

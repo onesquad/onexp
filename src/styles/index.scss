@@ -1,5 +1,31 @@
+// Base
+@import 'base/normalize';
+@import 'base/reset';
+
+// Imports
+
 @import '~@blueprintjs/core/lib/css/blueprint.css';
 
-.one-button{
-  background-color: red;
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins/flex_mixins';
+@import 'abstracts/mixins/media_query';
+@import 'abstracts/mixins/common';
+@import 'abstracts/mixins/margin';
+@import 'abstracts/mixins/padding';
+@import 'abstracts/animations';
+
+// Components
+@import 'components/typography';
+@import 'components/buttons';
+
+//Helpers
+@import 'abstracts/flex_utilities';
+@import 'abstracts/utilities';
+
+
+body {
+  * {
+    font-family: $base-font-family;
+  }
 }
