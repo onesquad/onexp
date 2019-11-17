@@ -13,7 +13,7 @@
   @include flex-direction(row);
   @include justify-content(space-between);
   @include align-items(center);
-  padding: 4px 24px;
+  padding: 4px 16px;
   font-size: 14px;
   line-height: 1.4;
   font-weight: $font-weight-normal;
@@ -23,7 +23,9 @@
   position: relative;
   cursor: pointer;
   @include user-select(none);
-
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
   svg {
     vertical-align: middle;
     line-height: inherit;
@@ -69,7 +71,7 @@
   color: $xp-color--text;
   background-color: $xp-color--white;
   border: thin solid $xp-color--white;
-
+  box-shadow: none;
   &:hover,
   &:active,
   &:focus {
