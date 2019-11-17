@@ -49,10 +49,10 @@ const Button = ({
   const getInnerContent = () => {
     if (loading && !isIconButton) {
       return (
-        <React.Fragment>
+        <>
           {text}
           <ButtonLoader />
-        </React.Fragment>
+        </>
       );
     } else if (icon) {
       const iconProps = {
@@ -61,13 +61,13 @@ const Button = ({
         color: iconColor || isLightButton || isIconButton ? 'black' : 'white',
       };
       return (
-        <React.Fragment>
+        <>
           <Icon
             {...iconProps}
             className={classnames({ 'mr--sm': !isIconButton })}
           />
           {text}
-        </React.Fragment>
+        </>
       );
     } else {
       return text;
