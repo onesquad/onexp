@@ -2,36 +2,40 @@
   "name": "onexp",
   "version": "0.0.7",
   "description": "The original OneSquad experience",
-  "author": "onesquad",
-  "license": "MIT",
   "repository": "onesquad/onexp",
+  "license": "MIT",
+  "author": "onesquad",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+  "scripts": {
+    "build": "rollup -c",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build",
+    "dev": "concurrently \"yarn start\" \"cd example && yarn start\"",
+    "prepare": "yarn run build",
+    "start": "chokidar \"src/**/*.js\" \"src/**/*.jsx\" \"src/**/*.scss\" --initial -c \"yarn build\"",
+    "test": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "**/*.{js,es6,jsx,scss}": [
-      "eslint --fix",
+      "prettier --write",
       "git add"
     ]
   },
-  "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "chokidar \"src/**/*.js\" \"src/**/*.jsx\" \"src/**/*.scss\" --initial -c \"yarn build\"",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "dev": "concurrently \"yarn start\" \"cd example && yarn start\""
-  },
-  "peerDependencies": {
-    "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+  "dependencies": {
+    "@blueprintjs/core": "^3.20.0",
+    "ramda": "^0.26.1",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -48,18 +52,14 @@
     "@babel/preset-react": "^7.7.0",
     "@svgr/rollup": "^4.3.3",
     "babel-eslint": "^10.0.3",
+    "chokidar-cli": "^2.1.0",
     "concurrently": "^5.0.0",
     "cross-env": "^6.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.1.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
     "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^3.2.0",
@@ -72,23 +72,13 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-url": "^3.0.0"
   },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "@blueprintjs/core": "^3.20.0",
-    "chokidar-cli": "^2.1.0",
-    "eslint-config-prettier": "^6.6.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.3",
-    "prettier": "^1.19.1",
-    "ramda": "^0.26.1",
-    "react-router-dom": "^5.1.2"
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
