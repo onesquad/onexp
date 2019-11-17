@@ -1,0 +1,24 @@
+// Base
+@import 'base/normalize';
+@import 'base/reset';
+
+// Imports
+
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins/flex_mixins';
+@import 'abstracts/mixins/media_query';
+@import 'abstracts/mixins/common';
+@import 'abstracts/animations';
+
+//Pages
+
+@import 'pages/main.scss';
+
+body {
+  * {
+    font-family: $base-font-family;
+  }
+}

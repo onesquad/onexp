@@ -1,0 +1,10 @@
+.xp--wrapper {
+  width: 100%;
+  height: 100vh;
+
+  .xp--sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: $xp-color--primary;
+  }
+}

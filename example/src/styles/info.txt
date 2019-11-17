@@ -1,0 +1,22 @@
+Author: Goutham Subramanyam
+
+The 3-1 Pattern
+
+sass/
+|
+|– abstracts/
+|   |– _variables.scss    # Sass Variables
+|   |– _mixins.scss       # Sass Mixins
+|   |– _animation.scss    # Sass Animation
+|
+|– base/
+|   |– _reset.scss        # Reset
+|   |– _normalize.scss    # Normalize
+|   …                     # Etc.
+|
+|– pages/
+|   |– _buttons.scss      # Buttons
+|   |– _forms.scss        # Form Elements
+|   …                     # Etc.
+|
+`– index.scss              # Main Sass file
