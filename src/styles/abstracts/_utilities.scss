@@ -1,0 +1,224 @@
+//Border
+
+//Transparent
+.border--transparent {
+    border: thin solid transparent;
+}
+
+.border-top--transparent {
+    border-top: thin solid transparent;
+}
+
+.border-right--transparent {
+    border-right: thin solid transparent;
+}
+
+.border-bottom--transparent {
+    border-bottom: thin solid transparent;
+}
+
+.border-left--transparent {
+    border-left: thin solid transparent;
+}
+
+
+//Normal
+.border {
+    border: thin solid $xp-color--border;
+}
+
+.border-top {
+    border-top: thin solid $xp-color--border;
+}
+
+.border-right {
+    border-right: thin solid $xp-color--border;
+}
+
+.border-bottom {
+    border-bottom: thin solid $xp-color--border;
+}
+
+.border-left {
+    border-left: thin solid $xp-color--border;
+}
+
+//Dashed
+.border--dashed {
+    border: thin dashed $xp-color--border;
+}
+
+.border-top--dashed {
+    border-top: thin dashed $xp-color--border;
+}
+
+.border-right--dashed {
+    border-right: thin dashed $xp-color--border;
+}
+
+.border-bottom--dashed {
+    border-bottom: thin dashed $xp-color--border;
+}
+
+.border-left--dashed {
+    border-left: thin dashed $xp-color--border;
+}
+
+//Zero
+.border--zero {
+    border: 0;
+}
+
+.border-top--zero {
+    border-top: 0;
+}
+
+.border-right--zero {
+    border-right: 0;
+}
+
+.border-bottom--zero {
+    border-bottom: 0;
+}
+
+.border-left--zero {
+    border-left: 0;
+}
+
+//Background
+
+.background-color--white {
+    background-color: $xp-color--white;
+}
+
+.background-color--black {
+    background-color: $xp-color--black;
+}
+
+//Float
+
+.xp-float--right {
+    float: right;
+    margin-left: auto !important;
+}
+
+//Overflow
+
+.xp-overflow--hidden {
+    overflow: hidden;
+}
+
+.xp-overflow--auto {
+    overflow: auto;
+}
+
+.xp-overflow--scroll {
+    overflow: scroll;
+}
+
+.xp-overflow--visible {
+    overflow: visible;
+}
+
+.xp-overflow--initial {
+    overflow: initial;
+}
+
+//Width & Height 
+
+.fx--fw {
+    width: 100%;
+}
+
+.fx--fh {
+    height: 100%;
+}
+
+//Border Radius
+
+.border-radius--sm {
+    border-radius: $border-radius-sm;
+}
+
+.border-radius--md {
+    border-radius: $border-radius-base;
+}
+
+.border-radius--lg {
+    border-radius: $border-radius-lg;
+}
+
+.border-radius--xl {
+    border-radius: $border-radius-xl;
+}
+
+//Display 
+
+.fx--inline {
+    display: inline;
+}
+
+.fx--inline-block {
+    display: inline-block;
+}
+
+.fx--block {
+    display: block;
+}
+
+//Pointer
+
+.pointer--cursor {
+    cursor: pointer;
+}
+
+.pointer--not-allowed {
+    cursor: not-allowed;
+}
+
+.pointer--none {
+    pointer-events: none;
+}
+
+//Position
+
+.position--relative {
+    position: relative;
+}
+
+.position--static {
+    position: static;
+}
+
+//Responsive Image
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+//Vertical Align
+
+.vertical-align--top {
+    vertical-align: top;
+}
+
+.vertical-align--middle {
+    vertical-align: middle;
+}
+
+.vertical-align--bottom {
+    vertical-align: bottom;
+}
+
+.vertical-align--text-bottom {
+    vertical-align: text-bottom;
+}
+
+//Shadow
+
+.shadow--card {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,156 @@
+// ========= General ========
+
+@mixin fx-row {
+  @include flexbox();
+  @include flex-direction(row);
+  @include align-items(center);
+}
+
+@mixin fx-column {
+  @include flexbox();
+  @include flex-direction(column);
+}
+
+//Justify Content
+@mixin fx-jc--start {
+  @include justify-content(flex-start);
+}
+
+@mixin fx-jc--end {
+  @include justify-content(flex-end);
+}
+
+@mixin fx-jc--center {
+  @include justify-content(center);
+}
+
+@mixin fx-jc--between {
+  @include justify-content(space-between);
+}
+
+@mixin fx-jc--around {
+  @include justify-content(space-around);
+}
+
+
+
+//Align Items
+@mixin fx-ai--start {
+  @include align-items(flex-start);
+}
+
+@mixin fx-ai--end {
+  @include align-items(flex-end);
+}
+
+@mixin fx-ai--center {
+  @include align-items(center);
+}
+
+@mixin fx-ai--baseline {
+  @include align-items(baseline);
+}
+
+@mixin fx-ai--stretch {
+  @include align-items(stretch);
+}
+
+//Align Content
+@mixin fx-ac--start {
+  @include align-content(flex-start);
+}
+
+@mixin fx-ac--end {
+  @include align-content(flex-end);
+}
+
+@mixin fx-ac--center {
+  @include align-content(center);
+}
+
+@mixin fx-ac--between {
+  @include align-content(space-between);
+}
+
+@mixin fx-ac--around {
+  @include align-content(space-around);
+}
+
+@mixin fx-ac--stretch {
+  @include align-content(stretch);
+}
+
+//Align Self
+@mixin fx-as--auto {
+  @include align-self(auto);
+}
+
+@mixin fx-as--start {
+  @include align-self(flex-start);
+}
+
+@mixin fx-as--end {
+  @include align-self(flex-end);
+}
+
+@mixin fx-as--center {
+  @include align-self(center);
+}
+
+@mixin fx-as--baseline {
+  @include align-self(baseline);
+}
+
+@mixin fx-as--stretch {
+  @include align-self(stretch);
+}
+
+//Wrap
+
+@mixin fx--wrap {
+  @include flex-wrap(wrap);
+}
+
+@mixin fx--nowrap {
+  @include flex-wrap(nowrap);
+}
+
+@mixin fx--wrapreverse {
+  @include flex-wrap(wrap-reverse);
+}
+
+//Grow 
+
+@mixin fx-grow {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+@mixin fx-grow-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+//Shrink
+
+@mixin fx-shrink {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@mixin fx-shrink-0 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}

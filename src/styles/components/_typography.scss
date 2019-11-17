@@ -1,0 +1,220 @@
+@mixin xp-text {
+    margin: 0;
+    font-size: 16px;
+    color: $xp-color--black;
+    font-weight: $font-weight-regular;
+}
+
+@mixin xp-text--jumbo {
+    font-size: 28px;
+}
+
+@mixin xp-text--h1 {
+    font-size: 24px;
+}
+
+@mixin xp-text--h2 {
+    font-size: 20px;
+}
+
+@mixin xp-text--h3 {
+    font-size: 16px;
+}
+
+@mixin xp-text--h4 {
+    font-size: 14px;
+}
+
+@mixin xp-text--micro {
+    font-size: 12px; // 12px
+}
+
+@mixin xp-text--nano {
+    font-size: 10px; // 10px
+}
+
+@mixin xp-text--thin {
+    font-weight: $font-weight-thin;
+}
+
+@mixin xp-text--normal {
+    font-weight: $font-weight-normal;
+}
+
+@mixin xp-text--regular {
+    font-weight: $font-weight-regular;
+}
+
+@mixin xp-text--semibold {
+    font-weight: $font-weight-semibold;
+}
+
+@mixin xp-text--bold {
+    font-weight: $font-weight-bold;
+}
+
+@mixin xp-text--black {
+    color: $xp-color--black;
+}
+
+@mixin xp-text--white {
+    color: $xp-color--white;
+}
+
+@mixin xp-text__line-height--normal {
+    line-height: 1;
+}
+
+@mixin xp-text__line-height--small {
+    line-height: 1.2;
+}
+
+@mixin xp-text__line-height--medium {
+    line-height: 1.4;
+}
+
+@mixin xp-text__line-height--large {
+    line-height: 1.6;
+}
+
+//Text Base class
+.xp-text {
+    @include xp-text;
+}
+
+//Text Sizes classes
+.xp-text--jumbo {
+    @include xp-text--jumbo;
+}
+
+.xp-text--h1 {
+    @include xp-text--h1;
+}
+
+.xp-text--h2 {
+    @include xp-text--h2;
+}
+
+.xp-text--h3 {
+    @include xp-text--h3;
+}
+
+.xp-text--h4 {
+    @include xp-text--h4;
+}
+
+.xp-text--micro {
+    @include xp-text--micro;
+}
+
+.xp-text--nano {
+    @include xp-text--nano;
+}
+
+//Text Weight classes
+.xp-text--thin {
+    @include xp-text--thin;
+}
+
+.xp-text--normal {
+    @include xp-text--normal;
+}
+
+.xp-text--regular {
+    @include xp-text--regular;
+}
+
+.xp-text--semibold {
+    @include xp-text--semibold;
+}
+
+.xp-text--bold {
+    @include xp-text--bold;
+}
+
+//Text Color classes
+.xp-text--black {
+    @include xp-text--black;
+}
+
+.xp-text--white {
+    @include xp-text--white;
+}
+
+//Line Height Classes
+
+.xp-text__line-height--normal {
+    @include xp-text__line-height--normal;
+}
+
+.xp-text__line-height--small {
+    @include xp-text__line-height--small;
+}
+
+.xp-text__line-height--medium {
+    @include xp-text__line-height--medium;
+}
+
+.xp-text__line-height--large {
+    @include xp-text__line-height--large;
+}
+
+.xp-text__align--center {
+    text-align: center;
+}
+
+.xp-text__align--left {
+    text-align: left;
+}
+
+.xp-text__align--right {
+    text-align: right;
+}
+
+.xp-text__transform--uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.xp-text__break-word {
+    word-break: break-word;
+}
+
+.xp-text__break-all {
+    word-break: break-all;
+}
+
+.xp-text__overflow-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.xp-text__no-wrap {
+    white-space: nowrap;
+}
+
+.xp-list {
+    li {
+        font-weight: $font-weight-normal;
+        color: $xp-color--black;
+        line-height: 1.6;
+        font-size: 14px;
+        margin: 0 0 8px 24px;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.xp-list--unordered {
+    li {
+        list-style: disc;
+    }
+}
+
+.xp-list--ordered {
+    li {
+        list-style: decimal;
+    }
+}
