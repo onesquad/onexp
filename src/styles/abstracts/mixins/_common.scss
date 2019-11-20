@@ -1,13 +1,19 @@
-@import './utilities/directional-property';
-@import './utilities/compact-shorthand';
-@import './utilities/contains-falsy';
+@import "./utilities/directional-property";
+@import "./utilities/compact-shorthand";
+@import "./utilities/contains-falsy";
 
 @mixin user-select($value: text) {
-    -webkit-user-select: $value;
-    /* Chrome all / Safari all */
-    -moz-user-select: $value;
-    /* Firefox all */
-    -ms-user-select: $value;
-    /* IE 10+ */
-    user-select: $value;
+  -webkit-user-select: $value;
+  /* Chrome all / Safari all */
+  -moz-user-select: $value;
+  /* Firefox all */
+  -ms-user-select: $value;
+  /* IE 10+ */
+  user-select: $value;
+}
+
+@mixin box-shadow($shadow: $xp-default-shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }

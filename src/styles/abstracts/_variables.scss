@@ -3,24 +3,23 @@
 $xp-color--black: #000000;
 $xp-color--white: #ffffff;
 $xp-color--border: #fefefe;
-$xp-color--primary: #4646F1;
-$xp-color--primary-dark: #343A40;
-$xp-color--primary-light: #6D6DFB;
+$xp-color--primary: #4646f1;
+$xp-color--primary-dark: #343a40;
+$xp-color--primary-light: #6d6dfb;
 $xp-color--text: #182026;
 $xp-color--text-muted: rgba($xp-color--text, 0.85);
-$xp-color--env: #EEF1F6;
+$xp-color--env: #eef1f6;
 $xp-color--highlight: rgba($xp-color--primary-dark, 0.1);
-$xp-color--success: #27AE60;
-$xp-color--waring: #F2994A;
-$xp-color--danger: #EB5757;
-
+$xp-color--success: #27ae60;
+$xp-color--waring: #f2994a;
+$xp-color--danger: #eb5757;
 
 // Animations
-$xp-default-transition : all 0.3s;
+$xp-default-transition: all 0.3s;
 
 // Font Family
 
-$base-font-family: 'IBM Plex Sans', sans-serif;
+$base-font-family: "IBM Plex Sans", sans-serif;
 
 // Font Weight
 
@@ -37,3 +36,7 @@ $font-weight-normal: 400;
 $font-weight-regular: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+
+//Shadows
+$xp-default-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+$xp-large-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);

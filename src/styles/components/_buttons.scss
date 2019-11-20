@@ -23,12 +23,29 @@
   position: relative;
   cursor: pointer;
   @include user-select(none);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  @include box-shadow();
   svg {
     vertical-align: middle;
     line-height: inherit;
+  }
+
+  &:hover {
+    -moz-transform: translate(0px, -1px);
+    -ms-transform: translate(0px, -1px);
+    -o-transform: translate(0px, -1px);
+    -webkit-transform: translate(0px, -1px);
+    transform: translate(0px, -1px);
+    @include box-shadow($xp-large-shadow);
+    transition: $xp-default-transition;
+  }
+
+  &:active,
+  &:focus {
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
 
   &:hover,
@@ -70,17 +87,17 @@
 .xp-button.xp-button--light {
   color: $xp-color--text;
   background-color: $xp-color--white;
-  border: thin solid $xp-color--white;
   box-shadow: none;
   &:hover,
   &:active,
   &:focus {
     color: $xp-color--text;
-    border: thin solid $xp-color--highlight;
     background-color: $xp-color--highlight;
+    transform: none;
   }
 
   &.xp-button--loading {
+    @include box-shadow(none);
     color: transparent;
     border: thin solid $xp-color--highlight;
     background-color: $xp-color--highlight;
@@ -93,6 +110,14 @@
   }
 }
 
+.xp-button--loading {
+  &:hover,
+  &:active,
+  &:focus {
+    transform: none;
+    @include box-shadow();
+  }
+}
 
 .xp-button.xp-button--icon {
   cursor: pointer;
@@ -142,7 +167,6 @@
 }
 
 @keyframes btn-bouncedelay {
-
   0%,
   80%,
   100% {
