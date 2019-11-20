@@ -3,6 +3,12 @@ import React, { Component } from "react";
 import { Button, Text } from "onexp";
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: false
+    };
+  }
   render() {
     return (
       <div className="fx-row fx-ai--start xp--wrapper">
@@ -34,9 +40,14 @@ export default class App extends Component {
             <Button type="dark" text="Dark Button" extraClass="mr--lg" />
             <Button
               type="dark"
+              onClick={() => {
+                this.setState({ isLoading: true });
+                setTimeout(() => this.setState({ isLoading: false }), 2000);
+              }}
               text="Publish"
               extraClass="mr--lg"
               icon="cloud-upload"
+              loading={this.state.isLoading}
             />
             <Button
               type="dark"
