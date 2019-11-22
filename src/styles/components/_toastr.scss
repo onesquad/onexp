@@ -1,0 +1,20 @@
+.xp-toastr {
+  .bp3-toast {
+    box-shadow: $xp-default-shadow;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.xp-toastr {
+  .xp-toastr-success {
+    background-color: $xp-color--primary-dark;
+  }
+  .xp-toastr-error {
+    background-color: $xp-color--danger;
+  }
+  .xp-toastr-info {
+    background-color: $xp-color--primary;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Button, Text } from "onexp";
+import { Button, Text, Toastr } from "onexp";
 
 export default class App extends Component {
   constructor(props) {
@@ -42,7 +42,13 @@ export default class App extends Component {
               type="dark"
               onClick={() => {
                 this.setState({ isLoading: true });
-                setTimeout(() => this.setState({ isLoading: false }), 2000);
+                setTimeout(
+                  () =>
+                    this.setState({ isLoading: false }, () =>
+                      Toastr.success("Your article has been published!")
+                    ),
+                  2000
+                );
               }}
               text="Publish"
               extraClass="mr--lg"
