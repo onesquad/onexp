@@ -1,0 +1,42 @@
+.xp-form-group {
+  display: block;
+}
+.xp-form-label {
+  @extend .fx--block;
+  @extend .mb--xs;
+  @extend .ml--xs;
+  @extend .xp-text--muted;
+  font-size: 12px;
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+}
+.xp-form-description {
+  font-size: 13px;
+  font-weight: $font-weight-regular;
+  @extend .mt--xs;
+  @extend .ml--xs;
+  @extend .xp-text--muted;
+}
+.xp-form-error {
+  font-size: 13px;
+  font-weight: $font-weight-regular;
+  color: $xp-color--danger;
+  @extend .fx--block;
+  @extend .mb--xs;
+  @extend .ml--xs;
+}
+.xp-input {
+  background-clip: padding-box;
+  border: none;
+  @extend .fx--block;
+  @extend .plr--md;
+  @extend .ptb--sm;
+  @extend .border-radius--md;
+  border: 1px solid rgba($xp-color--primary-dark, 0.25);
+  transition: $xp-default-transition;
+  &:focus {
+    transition: $xp-default-transition;
+    border: 1px solid rgba($xp-color--primary-dark, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}

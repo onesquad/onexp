@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Button, Text, Toastr } from "onexp";
+import { Button, Input, Text, Toastr } from "onexp";
 
 export default class App extends Component {
   constructor(props) {
@@ -44,8 +44,9 @@ export default class App extends Component {
                 this.setState({ isLoading: true });
                 setTimeout(
                   () =>
-                    this.setState({ isLoading: false }, () =>
-                      Toastr.success("Your article has been published!")
+                    this.setState(
+                      { isLoading: false, error: "Invalid name" },
+                      () => Toastr.success("Your article has been published!")
                     ),
                   2000
                 );
@@ -82,6 +83,17 @@ export default class App extends Component {
               Icon Button:
             </Text>
             <Button type="icon" extraClass="mr--lg" icon="calendar" />
+          </div>
+
+          <Text size="jumbo" weight="bold" color="black" extraClass="mb--lg">
+            Inputs
+          </Text>
+          <div className="fx-row mb--lg">
+            <Input
+              error={this.state.error}
+              label="User name"
+              placeholder="Enter your name"
+            />
           </div>
         </div>
       </div>
