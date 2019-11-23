@@ -27,7 +27,6 @@ export default {
     external({ includeDependencies: true }),
     postcss({
       use: ["sass"]
-      // extract: true
     }),
     url(),
     svgr(),

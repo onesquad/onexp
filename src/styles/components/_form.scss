@@ -1,5 +1,6 @@
 .xp-form-group {
   display: block;
+  @extend .mb--sm;
 }
 .xp-form-label {
   @extend .fx--block;
