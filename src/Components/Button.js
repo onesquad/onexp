@@ -1,12 +1,12 @@
-import React from 'react';
-import classnames from 'classnames';
-import { Link } from 'react-router-dom';
-import { Icon } from '@blueprintjs/core';
-import * as R from 'ramda';
+import React from "react";
+import classnames from "classnames";
+import { Link } from "react-router-dom";
+import { Icon } from "@blueprintjs/core";
+import * as R from "ramda";
 const noop = () => {};
 
 const Button = ({
-  type,
+  type = "dark",
   to,
   text,
   icon,
@@ -22,12 +22,12 @@ const Button = ({
   ...otherProps
 }) => {
   const classList = {
-    'xp-button': true,
+    "xp-button": true,
     [`xp-button--${type}`]: true,
-    'xp-button--loading': loading,
-    'xp-button--underline': hasUnderline,
-    'xp-button--full-width': fullWidth,
-    disabled: disabled,
+    "xp-button--loading": loading,
+    "xp-button--underline": hasUnderline,
+    "xp-button--full-width": fullWidth,
+    disabled: disabled
   };
 
   const handleClick = e => {
@@ -36,14 +36,14 @@ const Button = ({
     }
   };
 
-  const isIconButton = type === 'icon';
-  const isLightButton = type === 'light';
+  const isIconButton = type === "icon";
+  const isLightButton = type === "light";
 
   const commonProps = {
     className: classnames(extraClass, { ...classList }),
-    style: inheritFontSize && { fontSize: 'inherit' },
+    style: inheritFontSize && { fontSize: "inherit" },
     onClick: handleClick,
-    ...otherProps,
+    ...otherProps
   };
 
   const getInnerContent = () => {
@@ -58,13 +58,13 @@ const Button = ({
       const iconProps = {
         icon,
         iconSize: iconSize || 14,
-        color: iconColor || isLightButton || isIconButton ? 'black' : 'white',
+        color: iconColor || isLightButton || isIconButton ? "black" : "white"
       };
       return (
         <>
           <Icon
             {...iconProps}
-            className={classnames({ 'mr--sm': !isIconButton })}
+            className={classnames({ "mr--sm": !isIconButton })}
           />
           {text}
         </>
