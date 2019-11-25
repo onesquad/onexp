@@ -61,8 +61,6 @@
     "lint-staged": "^9.4.3",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
     "react-scripts": "^3.2.0",
     "rollup": "^0.68.2",
     "rollup-plugin-babel": "^4.0.1",
@@ -75,8 +73,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react": "^15.0.0 || ^16.4.1",
+    "react-dom": "^15.0.0 || ^16.4.1"
   },
   "engines": {
     "node": ">=8",
