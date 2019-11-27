@@ -1,9 +1,10 @@
 //Pages
-@import '../../../src/styles/index.scss';
-@import 'pages/main.scss';
+@import "~onexp/dist/styles/_variables.scss";
+@import "pages/main.scss";
 
 body {
   * {
     font-family: $base-font-family;
   }
+  background: $xp-color--env;
 }
