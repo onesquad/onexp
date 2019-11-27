@@ -6,6 +6,7 @@ import resolve from "rollup-plugin-node-resolve";
 import url from "rollup-plugin-url";
 import svgr from "@svgr/rollup";
 import size from "rollup-plugin-bundle-size";
+import copy from "rollup-plugin-copy";
 
 import pkg from "./package.json";
 
@@ -36,6 +37,9 @@ export default {
     }),
     resolve(),
     commonjs(),
-    size()
+    size(),
+    copy({
+      targets: [{ src: "src/styles/**/*", dest: "dist/styles" }]
+    })
   ]
 };
