@@ -4,7 +4,7 @@ import { Card, Text } from "onexp";
 const Cards = () => {
   return (
     <div className="xp-animate--fadeIn">
-      <Text size="jumbo" weight="bold" color="black" extraClass="mb--lg">
+      <Text size="jumbo" weight="bold" extraClass="mb--lg">
         Cards
       </Text>
       <div className="grid">

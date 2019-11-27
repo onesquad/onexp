@@ -26,7 +26,6 @@ export default class Card extends Component {
       <div className="xp-card--wrapper">
         <Text
           size="h2"
-          color="black"
           weight="semibold"
           extraClass="pb--sm wmb--sm border-bottom"
         >

@@ -5,7 +5,7 @@ const Inputs = () => {
   const [error, setError] = useState(false);
   return (
     <div className="xp-animate--fadeIn">
-      <Text size="jumbo" weight="bold" color="black" extraClass="mb--lg">
+      <Text size="jumbo" weight="bold" extraClass="mb--lg">
         Inputs
       </Text>
       <div className="fx-row mb--lg">

@@ -5,7 +5,7 @@ const Buttons = () => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <div className="xp-animate--fadeIn">
-      <Text size="jumbo" weight="bold" color="black" extraClass="mb--lg">
+      <Text size="jumbo" weight="bold" extraClass="mb--lg">
         Buttons
       </Text>
       <div className="fx-row mb--lg">
@@ -52,7 +52,7 @@ const Buttons = () => {
         <Button type="light" text="Light Button" extraClass="mr--lg" loading />
       </div>
       <div className="fx-row mb--lg">
-        <Text size="h4" color="black" weight="normal" extraClass="mr--sm">
+        <Text size="h4" weight="normal" extraClass="mr--sm">
           Icon Button:
         </Text>
         <Button type="icon" extraClass="mr--lg" icon="calendar" />

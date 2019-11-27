@@ -5,8 +5,8 @@ $xp-color--white: #ffffff;
 $xp-color--primary: #4646f1;
 $xp-color--primary-dark: #343a40;
 $xp-color--primary-light: #6d6dfb;
-$xp-color--text: #182026;
-$xp-color--text-muted: rgba($xp-color--text, 0.75);
+$xp-color--text: rgba(14, 30, 37, 0.87);
+$xp-color--text-muted: #717e82;
 $xp-color--env: #eef1f6;
 $xp-color--highlight: rgba($xp-color--primary-dark, 0.1);
 $xp-color--border: rgba($xp-color--primary-dark, 0.2);
@@ -39,4 +39,5 @@ $font-weight-bold: 700;
 
 //Shadows
 $xp-default-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+$xp-light-shadow: 0px 2px 4px rgba(0, 0, 0, 0.025);
 $xp-large-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
