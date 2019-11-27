@@ -4,9 +4,6 @@ import Overview from "./Main/Overview";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Router>

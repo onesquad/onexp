@@ -13,6 +13,11 @@ const Sidebar = () => {
           Buttons
         </Text>
       </Link>
+      <Link to="/cards" className="mb--sm">
+        <Text size="h3" color="white" weight="normal">
+          Cards
+        </Text>
+      </Link>
       <Link to="/inputs">
         <Text size="h3" color="white" weight="normal">
           Inputs
