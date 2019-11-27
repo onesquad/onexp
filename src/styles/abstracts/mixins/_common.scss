@@ -17,3 +17,9 @@
   -moz-box-shadow: $shadow;
   box-shadow: $shadow;
 }
+
+@mixin ie_browser_styles {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
