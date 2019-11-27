@@ -1,5 +1,6 @@
 .xp-card--wrapper {
   @include padding(24px);
-  border: thin solid $xp-color--highlight;
   border-radius: $border-radius-xl;
+  background: white;
+  @include box-shadow($xp-light-shadow);
 }
