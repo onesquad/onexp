@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import propTypes from "prop-types";
 import TextTransition, { presets } from "react-text-transition";
+import classnames from "classnames";
 
 export default class Input extends Component {
   constructor(props) {
@@ -21,6 +22,7 @@ export default class Input extends Component {
   static propTypes = {
     label: propTypes.string,
     description: propTypes.string,
+    fullWidth: propTypes.bool,
     placeholder: propTypes.string,
     className: propTypes.string,
     id: propTypes.string,
@@ -76,12 +78,22 @@ export default class Input extends Component {
   }
 }
 
-const renderInput = ({ type, value, onChange, className, id, placeholder }) => (
+const renderInput = ({
+  type,
+  value,
+  onChange,
+  fullWidth,
+  className,
+  id,
+  placeholder
+}) => (
   <input
     type={type}
     value={value}
     onChange={onChange}
-    className={`form-control xp-input ${className}`}
+    className={classnames(`form-control xp-input ${className}`, {
+      "xp-input--full-width": fullWidth
+    })}
     id={id}
     placeholder={placeholder}
   />
