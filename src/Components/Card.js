@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classnames from "classnames";
 import propTypes from "prop-types";
 import Text from "./Text";
 
@@ -17,20 +18,23 @@ export default class Card extends Component {
     children: propTypes.oneOfType([
       propTypes.arrayOf(propTypes.node),
       propTypes.node
-    ]).isRequired
+    ]).isRequired,
+    extraClass: propTypes.string
   };
 
   render() {
-    const { title, children } = this.props;
+    const { title, children, extraClass } = this.props;
     return (
-      <div className="xp-card--wrapper">
-        <Text
-          size="h2"
-          weight="semibold"
-          extraClass="pb--sm wmb--sm border-bottom"
-        >
-          {title}
-        </Text>
+      <div className={classnames("xp-card--wrapper", extraClass)}>
+        {title && (
+          <Text
+            size="h2"
+            weight="semibold"
+            extraClass="pb--sm wmb--sm border-bottom"
+          >
+            {title}
+          </Text>
+        )}
         {children}
       </div>
     );
