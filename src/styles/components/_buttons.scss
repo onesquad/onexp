@@ -32,6 +32,10 @@
   &:hover {
     @include box-shadow($xp-shadow-lg);
     transition: $xp-default-transition;
+    .xp-button--inner-icon {
+      transform: scale(1.1);
+      transition: $xp-default-transition;
+    }
   }
 
   &:active,
@@ -45,6 +49,10 @@
     text-decoration: none;
     outline: none;
   }
+}
+
+.xp-button--inner-icon {
+  transition: $xp-default-transition;
 }
 
 .xp-button.xp-button--primary {

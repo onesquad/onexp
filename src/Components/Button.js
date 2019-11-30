@@ -64,7 +64,10 @@ const Button = ({
         <>
           <Icon
             {...iconProps}
-            className={classnames({ "mr--sm": !isIconButton })}
+            className={classnames({
+              "mr--sm": !isIconButton,
+              "xp-button--inner-icon": true
+            })}
           />
           {text}
         </>
