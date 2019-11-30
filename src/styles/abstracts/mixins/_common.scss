@@ -12,7 +12,7 @@
   user-select: $value;
 }
 
-@mixin box-shadow($shadow: $xp-default-shadow) {
+@mixin box-shadow($shadow: $xp-shadow) {
   -webkit-box-shadow: $shadow;
   -moz-box-shadow: $shadow;
   box-shadow: $shadow;

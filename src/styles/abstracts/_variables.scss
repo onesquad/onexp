@@ -1,13 +1,13 @@
 // Colors
 
-$xp-color--black: #000000;
+$xp-color--black: #1f2020;
 $xp-color--white: #ffffff;
 $xp-color--primary: #4646f1;
 $xp-color--primary-dark: #343a40;
 $xp-color--primary-light: #6d6dfb;
-$xp-color--text: #4f566b;
+$xp-color--text: #4a5568;
 $xp-color--text-muted: rgba($xp-color--text, 0.7);
-$xp-color--env: #eef1f6;
+$xp-color--env: #f8fbff;
 $xp-color--highlight: rgba($xp-color--primary-dark, 0.1);
 $xp-color--border: rgba($xp-color--primary-dark, 0.2);
 $xp-color--success: #27ae60;
@@ -38,6 +38,14 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 //Shadows
-$xp-default-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-$xp-light-shadow: 0px 2px 4px rgba(0, 0, 0, 0.025);
-$xp-large-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+$xp-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$xp-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$xp-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$xp-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$xp-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$xp-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+$xp-shadow-outline: 0 0 0 3px rgba(66, 153, 225, 0.5);
+$xp-shadow-none: none;

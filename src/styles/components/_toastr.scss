@@ -1,6 +1,6 @@
 .xp-toastr {
   .bp3-toast {
-    box-shadow: $xp-default-shadow;
+    @include box-shadow();
     &:focus {
       outline: none;
     }

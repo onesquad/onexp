@@ -30,22 +30,13 @@
   }
 
   &:hover {
-    -moz-transform: translate(0px, -1px);
-    -ms-transform: translate(0px, -1px);
-    -o-transform: translate(0px, -1px);
-    -webkit-transform: translate(0px, -1px);
-    transform: translate(0px, -1px);
-    @include box-shadow($xp-large-shadow);
+    @include box-shadow($xp-shadow-lg);
     transition: $xp-default-transition;
   }
 
   &:active,
   &:focus {
-    -moz-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
+    @include box-shadow();
   }
 
   &:hover,
