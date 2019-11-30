@@ -32,7 +32,7 @@ const Buttons = () => {
             setTimeout(() => {
               setIsLoading(true);
               Toastr.success("Your article has been published!");
-            }, 2000);
+            }, 500);
           }}
           text="Publish"
           extraClass="mr--lg"

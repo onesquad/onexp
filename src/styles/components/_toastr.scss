@@ -1,6 +1,6 @@
 .xp-toastr {
   .bp3-toast {
-    @include box-shadow();
+    @include box-shadow($xp-shadow-lg);
     &:focus {
       outline: none;
     }
@@ -9,12 +9,12 @@
 
 .xp-toastr {
   .xp-toastr-success {
-    background-color: $xp-color--primary-dark;
+    background-color: $xp-color--success !important;
   }
   .xp-toastr-error {
-    background-color: $xp-color--danger;
+    background-color: $xp-color--danger !important;
   }
   .xp-toastr-info {
-    background-color: $xp-color--primary;
+    background-color: $xp-color--primary !important;
   }
 }
