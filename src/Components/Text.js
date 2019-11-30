@@ -4,9 +4,9 @@ import classnames from "classnames";
 const Text = ({
   size,
   family,
-  weight,
-  color,
-  lineHeight,
+  weight = "normal",
+  color = "default",
+  lineHeight = "normal",
   opacity,
   textCenter,
   isUppercase,
