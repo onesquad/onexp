@@ -53,8 +53,8 @@
   font-weight: $font-weight-bold;
 }
 
-@mixin xp-text--black {
-  color: $xp-color--black;
+@mixin xp-text--default {
+  color: $xp-color--text;
 }
 
 @mixin xp-text--white {
@@ -137,8 +137,8 @@
 }
 
 //Text Color classes
-.xp-text--black {
-  @include xp-text--black;
+.xp-text--default {
+  @include xp-text--default;
 }
 
 .xp-text--white {

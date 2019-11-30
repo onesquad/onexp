@@ -28,17 +28,26 @@
 }
 .xp-input {
   background-clip: padding-box;
-  border: none;
+  font-weight: $font-weight-regular;
+  color: $xp-color--text;
   @extend .fx--block;
   @extend .plr--md;
   @extend .ptb--sm;
   @extend .border-radius--md;
   border: 1px solid rgba($xp-color--primary-dark, 0.25);
   transition: $xp-default-transition;
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba($xp-color--text-muted, 0.55);
+  }
+  &:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+  }
   &:focus {
     transition: $xp-default-transition;
-    border: 1px solid rgba($xp-color--primary-dark, 0.5);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba($xp-color--primary-dark, 0.75);
+    transform: scale(1.02);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   }
 }
 
