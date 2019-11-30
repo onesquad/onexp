@@ -2,18 +2,18 @@
 
 $xp-color--black: #1f2020;
 $xp-color--white: #ffffff;
-$xp-color--primary: #4646f1;
-$xp-color--primary-dark: #343a40;
-$xp-color--primary-light: #6d6dfb;
+$xp-color--primary: #4c51bf;
+$xp-color--primary-dark: #2d3748;
+$xp-color--primary-light: #667eea;
 $xp-color--text: #4a5568;
 $xp-color--text-muted: rgba($xp-color--text, 0.7);
 $xp-color--text-placeholder: #a0aec0;
 $xp-color--env: #f7fafc;
 $xp-color--highlight: rgba($xp-color--primary-dark, 0.1);
 $xp-color--border: rgba($xp-color--primary-dark, 0.15);
-$xp-color--success: #27ae60;
+$xp-color--success: #38a169;
 $xp-color--waring: #f2994a;
-$xp-color--danger: #eb5757;
+$xp-color--danger: #e53e3e;
 
 // Animations
 $xp-default-transition: all 0.3s;
