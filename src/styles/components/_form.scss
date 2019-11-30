@@ -37,8 +37,7 @@
   border: 1px solid rgba($xp-color--primary-dark, 0.25);
   transition: $xp-default-transition;
   &::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba($xp-color--text-muted, 0.55);
+    color: $xp-color--text-placeholder;
   }
   &:hover {
     @include box-shadow($xp-shadow);
