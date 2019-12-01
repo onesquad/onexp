@@ -1,5 +1,6 @@
 import React from "react";
 import Avatars from "../Components/Avatars";
+import Dropdowns from "../Components/Dropdowns";
 import Buttons from "../Components/Buttons";
 import Inputs from "../Components/Inputs";
 import Cards from "../Components/Cards";
@@ -11,9 +12,9 @@ const Overview = () => {
       <Switch>
         <Route exact path="/avatars" component={Avatars} />
         <Route exact path="/buttons" component={Buttons} />
+        <Route path="/cards" component={Cards} />
+        <Route path="/dropdowns" component={Dropdowns} />
         <Route path="/inputs" component={Inputs} />
-        <Route path="/cards" component={Cards} />
-        <Route path="/cards" component={Cards} />
       </Switch>
     </div>
   );
