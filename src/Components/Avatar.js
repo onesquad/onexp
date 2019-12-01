@@ -11,18 +11,21 @@ export default class Card extends Component {
   static defaultProps = {
     image: "",
     size: "sm",
-    disabled: false
+    disabled: false,
+    interactive: false
   };
 
   static propTypes = {
-    iamge: propTypes.string,
-    extraClass: propTypes.string
+    image: propTypes.string,
+    extraClass: propTypes.string,
+    interactive: propTypes.bool
   };
 
   render() {
-    const { image, size, disabled, extraClass } = this.props;
+    const { interactive, image, size, disabled, extraClass } = this.props;
     const classList = {
       [`xp-avatar--${size}`]: true,
+      "xp-avatar-interactive": interactive,
       disabled: disabled
     };
     return (
