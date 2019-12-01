@@ -13,6 +13,11 @@ const Sidebar = () => {
           Buttons
         </Text>
       </Link>
+      <Link to="/avatars" className="mb--sm">
+        <Text size="h3" color="white" weight="normal">
+          Avatars
+        </Text>
+      </Link>
       <Link to="/cards" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Cards
