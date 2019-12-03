@@ -1,5 +1,33 @@
 .xp-dropdown {
-  @extend .plr--md;
-  @extend .ptb--sm;
+  @extend .ptb--xs;
   background: $xp-color--white;
+  &.bp3-popover {
+    @include box-shadow($xp-shadow-md);
+  }
+  &.xp-dropdown-sm {
+    width: 12rem;
+  }
+  &.xp-dropdown-md {
+    width: 14rem;
+  }
+  &.xp-dropdown-lg {
+    width: 16rem;
+  }
+  &.xp-dropdown-xl {
+    width: 18rem;
+  }
+
+  .xp-dropdown-link {
+    @extend .plr--xl;
+    @extend .ptb--sm;
+    &:hover {
+      background: $xp-color--env;
+      cursor: pointer;
+    }
+  }
+}
+.xp-dropdown-portal {
+  .bp3-transition-container {
+    margin-top: 4px !important;
+  }
 }

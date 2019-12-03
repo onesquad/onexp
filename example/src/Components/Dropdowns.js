@@ -8,17 +8,29 @@ const Dropdowns = () => {
       <Text size="jumbo" weight="bold" extraClass="mb--lg">
         Dropdowns
       </Text>
-      <div className="fx-row mb--lg">
+      <div className="fx-row mb--lg wpl--xl">
         <Dropdown
           target={
-            <Avatar
-              interactive
-              image="https://avatars1.githubusercontent.com/u/199754?s=460&v=4"
-            />
+            <div className="fx-row fx-ai--center pointer--cursor">
+              <Avatar
+                interactive
+                image="https://avatars1.githubusercontent.com/u/199754?s=460&v=4"
+              />
+              <i class="ri-arrow-down-s-line ri-lg"></i>
+            </div>
           }
           position="bottom"
         >
-          <Dropdown.Heading>Heyyyy</Dropdown.Heading>
+          <>
+            {/* <Dropdown.Heading>Vinay Chandran</Dropdown.Heading> */}
+            <Dropdown.Link>Account settings</Dropdown.Link>
+            <Dropdown.Link>Organization settings</Dropdown.Link>
+            <Dropdown.Divider />
+            <Dropdown.Link>Usage status</Dropdown.Link>
+            <Dropdown.Link>Billing</Dropdown.Link>
+            <Dropdown.Divider />
+            <Dropdown.Link>Logout</Dropdown.Link>
+          </>
         </Dropdown>
       </div>
     </div>

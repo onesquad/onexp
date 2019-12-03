@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import classnames from "classnames";
 import propTypes from "prop-types";
-import { Popover } from "@blueprintjs/core";
+import { Popover, Divider } from "@blueprintjs/core";
 import Heading from "./Heading";
+import Link from "./Link";
 
 export default class Card extends Component {
   constructor(props) {
@@ -23,18 +24,21 @@ export default class Card extends Component {
   };
 
   static Heading = Heading;
+  static Divider = Divider;
+  static Link = Link;
 
   render() {
     const {
       children,
       target,
       position,
-      size,
+      size = "md",
       disabled,
       extraClass
     } = this.props;
     const classList = {
-      disabled: disabled
+      disabled: disabled,
+      [`xp-dropdown-${size}`]: true
     };
 
     return (
@@ -46,7 +50,7 @@ export default class Card extends Component {
           offset: "100px"
         }}
         position={position}
-        portal={false}
+        portalClassName="xp-dropdown-portal"
       >
         {target}
         {children}

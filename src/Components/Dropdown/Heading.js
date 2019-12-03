@@ -1,7 +1,9 @@
 import React from "react";
-
+import { Text } from "onexp";
 export default props => (
   <div>
-    <span className="xp-text--h3">{props.children}</span>
+    <Text size="h3" extraClass="pl--lg mb--sm">
+      {props.children}
+    </Text>
   </div>
 );
