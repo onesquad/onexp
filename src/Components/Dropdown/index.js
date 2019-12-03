@@ -33,21 +33,24 @@ export default class Card extends Component {
       target,
       position,
       size = "md",
+      offset = "5",
       disabled,
       extraClass
     } = this.props;
     const classList = {
       disabled: disabled,
-      [`xp-dropdown-${size}`]: true
+      [`xp-dropdown-mt-${size}`]: true
     };
 
     return (
       <Popover
         popoverClassName={classnames("xp-dropdown", extraClass, classList)}
-        targetClassName="mb--xs"
-        minimal
         modifiers={{
-          offset: "100px"
+          arrow: { enabled: false },
+          offset: {
+            enabled: true,
+            offset: `0%p ${offset}%p`
+          }
         }}
         position={position}
         portalClassName="xp-dropdown-portal"
