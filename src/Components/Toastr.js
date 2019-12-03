@@ -28,5 +28,10 @@ export default {
       icon: "asterisk",
       intent: "danger",
       ...parse(props)
+    }),
+  show: props =>
+    toastr.show({
+      icon: "success",
+      ...parse(props)
     })
 };
