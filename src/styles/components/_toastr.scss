@@ -8,7 +8,6 @@
 }
 
 .xp-toastr {
-  background-color: $xp-color--primary-dark !important;
   .xp-toastr-success {
     background-color: $xp-color--success !important;
   }
@@ -17,5 +16,8 @@
   }
   .xp-toastr-info {
     background-color: $xp-color--primary !important;
+  }
+  .xp-toastr-dark {
+    background-color: $xp-color--primary-dark !important;
   }
 }

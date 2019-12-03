@@ -31,6 +31,7 @@ export default {
     }),
   show: props =>
     toastr.show({
+      className: "xp-toastr-dark",
       icon: "success",
       ...parse(props)
     })
