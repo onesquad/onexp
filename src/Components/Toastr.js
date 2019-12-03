@@ -8,6 +8,13 @@ const toastr = Toaster.create({
 const parse = props => (typeof props === "string" ? { message: props } : props);
 
 export default {
+  show: props =>
+    toastr.show({
+      className: "xp-toastr-dark",
+      intent: "info",
+      icon: "endorsed",
+      ...parse(props)
+    }),
   success: props =>
     toastr.show({
       className: "xp-toastr-success",
@@ -27,12 +34,6 @@ export default {
       className: "xp-toastr-error",
       icon: "asterisk",
       intent: "danger",
-      ...parse(props)
-    }),
-  show: props =>
-    toastr.show({
-      className: "xp-toastr-dark",
-      icon: "success",
       ...parse(props)
     })
 };

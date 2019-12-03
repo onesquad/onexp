@@ -31,7 +31,7 @@ const Buttons = () => {
             setIsLoading(true);
             setTimeout(() => {
               setIsLoading(true);
-              Toastr.success("Your article has been published!");
+              Toastr.show("Your article has been published!");
             }, 500);
           }}
           text="Publish"
