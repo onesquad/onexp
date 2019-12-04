@@ -16,7 +16,8 @@ export default class Input extends Component {
     type: "text",
     placeholder: "",
     error: null,
-    className: ""
+    className: "",
+    wrapperClassName: ""
   };
 
   static propTypes = {
@@ -25,6 +26,7 @@ export default class Input extends Component {
     fullWidth: propTypes.bool,
     placeholder: propTypes.string,
     className: propTypes.string,
+    wrapperClassName: propTypes.string,
     id: propTypes.string,
     error: propTypes.string,
     type: propTypes.oneOf(["text", "number", "email", "password"])
@@ -36,23 +38,21 @@ export default class Input extends Component {
   };
   render() {
     const {
-      value,
-      onChange,
       prepend,
-      type,
       label,
       description,
-      placeholder,
       error,
-      className,
-      style,
-      id
+      wrapperClassName,
+      style
     } = this.props;
     return (
-      <div className="xp-form-group" style={style}>
+      <div className={`xp-form-group ${wrapperClassName}`} style={style}>
         {(label || error) && (
           <TextTransition
-            className={error ? "xp-form-error" : "xp-form-label"}
+            className={classnames({
+              "xp-form-label": true,
+              "xp-form-error": error
+            })}
             text={error || label}
           />
         )}
