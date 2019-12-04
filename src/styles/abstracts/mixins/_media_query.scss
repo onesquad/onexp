@@ -1,6 +1,7 @@
 // Media Queries Mixins
 $mob-479: 479px !default;
 $tab-768: 768px !default;
+$tablet991: 991px !default;
 $tab-max1024: 1024px !default;
 $desk1200: 1200px !default;
 $lap1366: 1366px !default;
@@ -11,62 +12,47 @@ $desk1440: 1441px !default;
     @media screen and (min-width: $desk1440) {
       @content;
     }
-  }
-
-  @else if $media == lap-top {
+  } @else if $media == lap-top {
     @media screen and (max-width: $lap1366) {
       @content;
     }
-  }
-
-  @else if $media == desk {
+  } @else if $media == desk {
     @media screen and (min-width: $desk1200) {
       @content;
     }
-  }
-
-  @else if $media == lap-max {
+  } @else if $media == lap-max {
     @media screen and (max-width: $desk1200 - 1) {
       @content;
     }
-  }
-
-  @else if $media == tab-min {
+  } @else if $media == tab-min {
     @media screen and (max-width: $tab-max1024) {
       @content;
     }
-  }
-
-  @else if $media == tab-only {
+  } @else if $media == tab-only {
     @media screen and (min-width: $tab-768) and (max-width: $tab-max1024 - 1) {
       @content;
     }
-  }
-
-  @else if $media == lap-only {
+  } @else if $media == lap-only {
     @media screen and (min-width: $tab-max1024) and (max-width: $desk1200 - 1) {
       @content;
     }
-  }
-
-  @else if $media == mob {
+  } @else if $media == tablet {
+    @media screen and (max-width: $tablet991) {
+      @content;
+    }
+  } @else if $media == mob {
     @media screen and (max-width: $tab-768 - 1) {
       @content;
     }
-  }
-
-  @else if $media == xs-mob {
+  } @else if $media == xs-mob {
     @media screen and (max-width: $mob-479) {
       @content;
     }
-  }
-
-  @else if $media == tab-lap {
+  } @else if $media == tab-lap {
     @media screen and (min-width: $tab-768) and (max-width: $desk1200 - 1) {
       @content;
     }
   }
-
 }
 
 @mixin min-max($resMin, $resMax) {
@@ -87,8 +73,7 @@ $desk1440: 1441px !default;
   }
 }
 
-
-// Tablet & Portrait 
+// Tablet & Portrait
 @mixin tab-portrait {
   @media screen and (min-width: $tab-768) and (max-width: $tab-max1024) and (orientation: portrait) {
     @content;
@@ -97,7 +82,7 @@ $desk1440: 1441px !default;
 
 @mixin mob-tab-portrait {
   @media screen and (max-width: $tab-768 - 1),
-  (max-width: $tab-max1024) and (orientation: portrait) {
+    (max-width: $tab-max1024) and (orientation: portrait) {
     @content;
   }
 }
