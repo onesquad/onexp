@@ -137,14 +137,14 @@
   @include justify-content(flex-start);
   @include align-items(center);
   font-size: 14px;
-  color: $xp-color--primary;
+  color: $xp-color--primary-light;
   font-weight: $font-weight-regular;
   transition: $xp-default-transition;
 
   &:hover,
   &:active,
   &:focus {
-    color: $xp-color--black;
+    color: $xp-color--primary;
   }
 }
 
