@@ -25,7 +25,7 @@ export default class Card extends Component {
     const { interactive, image, size, disabled, extraClass } = this.props;
     const classList = {
       [`xp-avatar--${size}`]: true,
-      "xp-avatar-interactive": interactive,
+      "xp-avatar--interactive": interactive,
       disabled: disabled
     };
     return (
