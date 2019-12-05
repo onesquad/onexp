@@ -1,27 +1,31 @@
 .xp-avatar {
   vertical-align: middle;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
+  &.xp-avatar--sm {
+    width: 40px;
+    height: 40px;
+  }
   &.xp-avatar--md {
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
   }
   &.xp-avatar--lg {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 56px;
+    height: 56px;
   }
   &.xp-avatar--xl {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
   }
   &.xp-avatar--full {
-    width: 12rem;
-    height: 12rem;
+    width: 200px;
+    height: 200px;
   }
 
-  &.xp-avatar-interactive {
+  &.xp-avatar--interactive {
     cursor: pointer;
   }
 }

@@ -1198,3 +1198,29 @@
 .box-shadow {
   @include box-shadow();
 }
+
+// Hide Items
+
+.xp-hidden--xs {
+  @include viewport(xs-mob) {
+    display: none;
+  }
+}
+
+.xp-hidden--sm {
+  @include viewport(mob) {
+    display: none;
+  }
+}
+
+.xp-hidden--md {
+  @include viewport(tablet) {
+    display: none;
+  }
+}
+
+.xp-hidden--lg {
+  @include viewport(lap-max) {
+    display: none;
+  }
+}

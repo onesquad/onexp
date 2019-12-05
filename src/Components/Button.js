@@ -21,8 +21,10 @@ const Button = ({
   onClick = noop,
   ...otherProps
 }) => {
+  const nakedButton = type === "link" || type === "text";
+
   const classList = {
-    "xp-button": true,
+    "xp-button": !nakedButton,
     [`xp-button--${type}`]: true,
     "xp-button--loading": loading,
     "xp-button--underline": hasUnderline,

@@ -52,6 +52,24 @@ const Buttons = () => {
         <Button type="light" text="Light Button" extraClass="mr--lg" loading />
       </div>
       <div className="fx-row mb--lg">
+        <Button type="text" text="Text Button" extraClass="mr--lg" />
+        <Button
+          type="text"
+          text="Button with Underline"
+          extraClass="mr--lg"
+          hasUnderline
+        />
+      </div>
+      <div className="fx-row mb--lg">
+        <Button type="link" text="Link Button" extraClass="mr--lg" />
+        <Button
+          type="link"
+          text="Button with Underline"
+          extraClass="mr--lg"
+          hasUnderline
+        />
+      </div>
+      <div className="fx-row mb--lg">
         <Text size="h4" weight="normal" extraClass="mr--sm">
           Icon Button:
         </Text>
