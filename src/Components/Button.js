@@ -80,11 +80,16 @@ const Button = ({
   };
 
   let buttonProps = {
-    ...commonProps,
-    ...(!R.isNil(to) && to)
+    ...commonProps
   };
 
   const Parent = R.isNil(to) ? `a` : Link;
+  if (R.isNil(to)) {
+    Parent = `a`;
+  } else {
+    Parent = Link;
+    buttonProps.to = to;
+  }
 
   return <Parent {...buttonProps}>{getInnerContent()}</Parent>;
 };
