@@ -83,10 +83,8 @@ const Button = ({
     ...commonProps
   };
 
-  const Parent = R.isNil(to) ? `a` : Link;
-  if (R.isNil(to)) {
-    Parent = `a`;
-  } else {
+  let Parent = `a`;
+  if (!R.isNil(to)) {
     Parent = Link;
     buttonProps.to = to;
   }
