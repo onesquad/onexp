@@ -94,7 +94,7 @@ const Button = ({
     buttonProps.to = to;
   }
   if (!R.isNil(activeClassName)) {
-    Parent = Navlink;
+    Parent = NavLink;
     buttonProps.activeClassName = activeClassName;
   }
 
