@@ -83,9 +83,17 @@ const Button = ({
     }
   };
 
-  const Parent = R.isNil(to) ? `a` : Link;
+  let buttonProps = {
+    ...commonProps
+  };
 
-  return <Parent {...commonProps}>{getInnerContent()}</Parent>;
+  let Parent = `a`;
+  if (!R.isNil(to)) {
+    Parent = Link;
+    buttonProps.to = to;
+  }
+
+  return <Parent {...buttonProps}>{getInnerContent()}</Parent>;
 };
 
 const ButtonLoader = () => {
