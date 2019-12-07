@@ -28,9 +28,14 @@ const Sidebar = () => {
           Dropdowns
         </Text>
       </Link>
-      <Link to="/inputs">
+      <Link to="/inputs" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Inputs
+        </Text>
+      </Link>
+      <Link to="/modals">
+        <Text size="h3" color="white" weight="normal">
+          Modals
         </Text>
       </Link>
     </div>

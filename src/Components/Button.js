@@ -60,7 +60,11 @@ const Button = ({
       const iconProps = {
         icon,
         iconSize: iconSize || 14,
-        color: iconColor || isLightButton || isIconButton ? "black" : "white"
+        color: iconColor
+          ? iconColor
+          : isLightButton || isIconButton
+          ? "black"
+          : "white"
       };
       return (
         <>

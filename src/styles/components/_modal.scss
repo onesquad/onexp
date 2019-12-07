@@ -1,0 +1,147 @@
+.xp-modal--wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba($xp-color--black, 0.8);
+  z-index: 10;
+  overflow-y: auto;
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-items(center);
+  @include padding(72px);
+  animation: fadeIn 0.3s both;
+
+  @include ie_browser_styles {
+    display: block;
+  }
+
+  &.xp-modal--wrapper__close {
+    animation: fadeOut 0.3s both;
+  }
+
+  &.xp-modal--wrapper__sm {
+    .xp-modal--container {
+      width: 40%;
+      min-height: 40vh;
+    }
+  }
+
+  &.xp-modal--wrapper__rg {
+    .xp-modal--container {
+      width: 50%;
+      min-height: 52vh;
+    }
+  }
+
+  &.xp-modal--wrapper__md {
+    .xp-modal--container {
+      width: 65%;
+      min-height: 65vh;
+    }
+  }
+
+  &.xp-modal--wrapper__lg {
+    .xp-modal--container {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &.xp-modal--wrapper__full {
+    @include padding(0);
+
+    .xp-modal--close-wrapper {
+      z-index: 1;
+
+      svg {
+        path {
+          stroke: $xp-color--text;
+        }
+      }
+    }
+
+    .xp-modal--container {
+      width: 100vw;
+      min-height: 100vh;
+      border-radius: 0px;
+      overflow-y: auto;
+    }
+  }
+
+  .xp-modal--container {
+    position: relative;
+    background-color: $xp-color--white;
+    border-radius: $border-radius-base;
+    @include margin(auto);
+
+    @include ie_browser_styles {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.xp-modal--container__footer {
+      @include padding(0 0 112px);
+    }
+
+    &.xp-modal--container__loading {
+      overflow: hidden;
+
+      .xp-button--loader__dots {
+        z-index: 1;
+        @include loader__dots--dark;
+      }
+    }
+  }
+
+  .xp-modal--header {
+    @include padding(48px 48px 32px);
+  }
+
+  .xp-modal--footer {
+    @include padding(24px 48px 48px);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  @include viewport(mob) {
+    @include padding(10% 5%);
+    z-index: 200; // Temporary
+
+    .xp-modal--container {
+      width: 100% !important;
+    }
+  }
+}
+
+.xp-modal--close-wrapper {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+
+  .xp-button.xp-modal--close {
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid $xp-color--grey;
+    width: 32px;
+    height: 32px;
+    @include padding(0);
+    @include justify-content(center);
+
+    &:hover {
+      background-color: $xp-color--text;
+    }
+  }
+
+  @include viewport(mob) {
+    .xp-modal--close-wrapper {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+    }
+  }
+}
