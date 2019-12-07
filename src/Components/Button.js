@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Icon } from "@blueprintjs/core";
 import * as R from "ramda";
 const noop = () => {};
@@ -18,6 +18,7 @@ const Button = ({
   fullWidth,
   extraClass,
   inheritFontSize,
+  activeClassName,
   onClick = noop,
   ...otherProps
 }) => {
@@ -91,6 +92,10 @@ const Button = ({
   if (!R.isNil(to)) {
     Parent = Link;
     buttonProps.to = to;
+  }
+  if (!R.isNil(activeClassName)) {
+    Parent = Navlink;
+    buttonProps.activeClassName = activeClassName;
   }
 
   return <Parent {...buttonProps}>{getInnerContent()}</Parent>;
