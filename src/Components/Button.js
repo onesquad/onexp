@@ -19,6 +19,7 @@ const Button = ({
   extraClass,
   inheritFontSize,
   activeClassName,
+  submit,
   onClick = noop,
   ...otherProps
 }) => {
@@ -89,6 +90,9 @@ const Button = ({
   };
 
   let Parent = `a`;
+  if (submit) {
+    Parent = `button`;
+  }
   if (!R.isNil(to)) {
     Parent = Link;
     buttonProps.to = to;
