@@ -33,9 +33,14 @@ const Sidebar = () => {
           Inputs
         </Text>
       </Link>
-      <Link to="/checkboxes">
+      <Link to="/checkboxes" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Checkboxes
+        </Text>
+      </Link>
+      <Link to="/radios">
+        <Text size="h3" color="white" weight="normal">
+          Radios
         </Text>
       </Link>
     </div>

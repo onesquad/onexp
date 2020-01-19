@@ -6,6 +6,7 @@ import Inputs from "../Components/Inputs";
 import Modals from "../Components/Modals";
 import Cards from "../Components/Cards";
 import Checkboxes from "../Components/Checkboxes";
+import Radios from "../Components/Radios";
 import { Route, Switch } from "react-router-dom";
 
 const Overview = () => {
@@ -19,6 +20,7 @@ const Overview = () => {
         <Route path="/inputs" component={Inputs} />
         <Route path="/modals" component={Modals} />
         <Route path="/checkboxes" component={Checkboxes} />
+        <Route path="/radios" component={Radios} />
       </Switch>
     </div>
   );
