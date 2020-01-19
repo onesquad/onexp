@@ -6,6 +6,18 @@ import Input from "./Components/Input";
 import Text from "./Components/Text";
 import Toastr from "./Components/Toastr";
 import Modal from "./Components/Modal";
-
+import Checkbox from "./Components/Checkbox";
 import { Icon } from "@blueprintjs/core";
-export { Avatar, Button, Card, Dropdown, Icon, Input, Text, Toastr, Modal };
+
+export {
+  Avatar,
+  Button,
+  Card,
+  Dropdown,
+  Icon,
+  Input,
+  Text,
+  Toastr,
+  Modal,
+  Checkbox
+};

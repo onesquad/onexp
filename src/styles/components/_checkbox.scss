@@ -1,0 +1,397 @@
+$el-size-large: 14px;
+$el-size-default: 12.5px;
+$el-size-small: 10px;
+
+$el-blue: #20a0ff;
+$el-blue-light: #b0d7f5;
+
+$el-gray: $xp-color--text-muted;
+$el-gray-light: #d3dce6;
+
+$checkmeout-switch: $xp-color--text-muted;
+$checkmeout-switch-light: #d3dce6;
+
+$el-default: $xp-color--primary;
+$el-default-light: rgba($xp-color--primary, 0.4);
+
+/*checkbox radio component*/
+.checkmeout-radio,
+.checkmeout-checkbox {
+  position: relative;
+  font-size: $el-size-default;
+
+  span {
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      display: inline;
+    }
+  }
+}
+
+label.checkmeout-radio,
+label.checkmeout-checkbox {
+  display: block;
+  cursor: pointer;
+}
+
+.checkmeout-radio > input[type="radio"],
+.checkmeout-checkbox > input[type="checkbox"] {
+  display: none;
+}
+
+.checkmeout-radio > input[type="radio"][disabled],
+.checkmeout-checkbox > input[type="checkbox"][disabled] {
+  cursor: not-allowed;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style,
+.checkmeout-checkbox > input[type="checkbox"] + .checkmeout-checkbox-style {
+  position: relative;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: inherit;
+  margin: 0;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:hover:before,
+.checkmeout-checkbox
+  > input[type="checkbox"]
+  + .checkmeout-checkbox-style:hover:before {
+  border-color: $el-default;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:before,
+.checkmeout-checkbox
+  > input[type="checkbox"]
+  + .checkmeout-checkbox-style:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  content: "";
+  border: 1px solid $el-gray;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:after,
+.checkmeout-checkbox
+  > input[type="checkbox"]
+  + .checkmeout-checkbox-style:after {
+  position: absolute;
+  display: none;
+  content: "";
+}
+
+.checkmeout-radio > input[type="radio"][disabled] + .checkmeout-radio-style,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style {
+  cursor: not-allowed;
+  color: $el-gray-light;
+}
+
+.checkmeout-radio
+  > input[type="radio"][disabled]
+  + .checkmeout-radio-style:hover,
+.checkmeout-radio
+  > input[type="radio"][disabled]
+  + .checkmeout-radio-style:before,
+.checkmeout-radio
+  > input[type="radio"][disabled]
+  + .checkmeout-radio-style:after,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style:hover,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style:before,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style:after {
+  cursor: not-allowed;
+}
+
+.checkmeout-radio
+  > input[type="radio"][disabled]
+  + .checkmeout-radio-style:hover:before,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style:hover:before {
+  border: 1px solid $el-gray-light;
+  animation-name: none;
+}
+
+.checkmeout-radio
+  > input[type="radio"][disabled]
+  + .checkmeout-radio-style:before,
+.checkmeout-checkbox
+  > input[type="checkbox"][disabled]
+  + .checkmeout-checkbox-style:before {
+  border-color: $el-gray-light;
+}
+
+.checkmeout-radio
+  > input[type="radio"]:checked
+  + .checkmeout-radio-style:before,
+.checkmeout-checkbox
+  > input[type="checkbox"]:checked
+  + .checkmeout-checkbox-style:before {
+  animation-name: none;
+}
+
+.checkmeout-radio > input[type="radio"]:checked + .checkmeout-radio-style:after,
+.checkmeout-checkbox
+  > input[type="checkbox"]:checked
+  + .checkmeout-checkbox-style:after {
+  display: block;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:before {
+  border-radius: 50%;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:after {
+  top: 0.4em;
+  left: 0.4em;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: $el-default;
+}
+
+.checkmeout-radio
+  > input[type="radio"]:checked
+  + .checkmeout-radio-style:before {
+  border: 1px solid $el-default;
+}
+
+.checkmeout-radio
+  > input[type="radio"]:checked[disabled]
+  + .checkmeout-radio-style:before {
+  border: 1px solid $el-default-light;
+}
+
+.checkmeout-radio
+  > input[type="radio"]:checked[disabled]
+  + .checkmeout-radio-style:after {
+  background: $el-default-light;
+}
+
+.checkmeout-checkbox
+  > input[type="checkbox"]
+  + .checkmeout-checkbox-style:before {
+  border-radius: 2px;
+}
+
+.checkmeout-checkbox
+  > input[type="checkbox"]
+  + .checkmeout-checkbox-style:after {
+  top: 0.2em;
+  left: 0.5em;
+  box-sizing: border-box;
+  width: 0.4em;
+  height: 0.875em;
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.checkmeout-checkbox
+  > input[type="checkbox"]:checked
+  + .checkmeout-checkbox-style:before {
+  border: $el-default;
+  background: $el-default;
+}
+
+.checkmeout-checkbox
+  > input[type="checkbox"]:checked[disabled]
+  + .checkmeout-checkbox-style:before {
+  border: $el-default-light;
+  background: $el-default-light;
+}
+
+/*switch component*/
+.checkmeout-switch,
+.checkmeout-switch-style,
+.checkmeout-switch-style:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.checkmeout-switch {
+  display: inline-block;
+  font-size: $el-size-default;
+  height: 1.3em;
+  position: relative;
+
+  .checkmeout-switch-style {
+    height: 1.3em;
+    left: 0;
+    background: $checkmeout-switch;
+    -webkit-border-radius: 0.8em;
+    border-radius: 0.8em;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 2.5em;
+    cursor: pointer;
+
+    &:before {
+      display: block;
+      content: "";
+      height: 1em;
+      position: absolute;
+      width: 1em;
+      background-color: #fff;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      left: 0.2em;
+      top: 0.15em;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  & > input[type="checkbox"] {
+    display: none;
+
+    &[disabled] + .checkmeout-switch-style {
+      cursor: not-allowed;
+      background-color: $checkmeout-switch-light;
+    }
+
+    &:checked + .checkmeout-switch-style {
+      background-color: $el-default;
+
+      &:before {
+        left: 50%;
+      }
+    }
+
+    &:checked[disabled] + .checkmeout-switch-style {
+      background-color: $el-default-light;
+    }
+  }
+}
+
+/*define size*/
+
+.checkmeout-radio,
+.checkmeout-checkbox,
+.checkmeout-switch {
+  font-size: $el-size-default;
+}
+
+.checkmeout-radio.checkmeout-radio-sm,
+.checkmeout-checkbox.checkmeout-checkbox-sm,
+.checkmeout-switch.checkmeout-switch-sm {
+  font-size: $el-size-small;
+}
+
+.checkmeout-radio.checkmeout-radio-lg,
+.checkmeout-checkbox.checkmeout-checkbox-lg,
+.checkmeout-switch.checkmeout-switch-lg {
+  font-size: $el-size-large;
+}
+
+$colors-list: $xp-color--primary;
+$colors-list-name: "primary";
+
+@each $current-color in $colors-list {
+  $i: index($colors-list, $current-color);
+
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"]
+    + label:hover:before,
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"]
+    + label:hover:before,
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"]:checked
+    + label:before,
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"]:checked
+    + label:before {
+    border-color: $current-color;
+  }
+
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"]:checked
+    + label:before,
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"]
+    + label:after {
+    background: $current-color;
+  }
+
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"][disabled]
+    + label:hover:before,
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"][disabled]
+    + label:hover:before {
+    border-color: $el-gray-light;
+  }
+
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"]:checked[disabled]
+    + label:before,
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"]:checked[disabled]
+    + label:before {
+    border-color: rgba($current-color, 0.5);
+  }
+
+  .checkmeout-checkbox.checkmeout-checkbox-#{nth($colors-list-name, $i)}
+    > input[type="checkbox"][disabled]:checked
+    + label:before,
+  .checkmeout-radio.checkmeout-radio-#{nth($colors-list-name, $i)}
+    > input[type="radio"]:checked[disabled]
+    + label:after {
+    background: rgba($current-color, 0.5);
+  }
+
+  .checkmeout-switch {
+    & > input[type="checkbox"] {
+      &.checkmeout-switch-#{nth($colors-list-name, $i)}
+        > input[type="checkbox"] {
+        &:checked + .checkmeout-switch-style {
+          background-color: $current-color !important;
+        }
+
+        &:checked[disabled] + .checkmeout-switch-style {
+          background-color: rgba($current-color, 0.5) !important;
+        }
+      }
+    }
+  }
+}
+
+//Radio Fix --- Goutham
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style {
+  width: 16px;
+  height: 16px;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkmeout-radio > input[type="radio"] + .checkmeout-radio-style:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+}

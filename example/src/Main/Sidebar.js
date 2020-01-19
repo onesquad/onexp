@@ -33,9 +33,9 @@ const Sidebar = () => {
           Inputs
         </Text>
       </Link>
-      <Link to="/modals">
+      <Link to="/checkboxes">
         <Text size="h3" color="white" weight="normal">
-          Modals
+          Checkboxes
         </Text>
       </Link>
     </div>
