@@ -33,9 +33,14 @@ const Sidebar = () => {
           Inputs
         </Text>
       </Link>
-      <Link to="/modals">
+      <Link to="/modals" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Modals
+        </Text>
+      </Link>
+      <Link to="/select">
+        <Text size="h3" color="white" weight="normal">
+          Select
         </Text>
       </Link>
     </div>

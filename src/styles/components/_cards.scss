@@ -2,5 +2,5 @@
   @include padding(24px);
   border-radius: $border-radius-xl;
   background: white;
-  @include box-shadow($xp-shadow);
+  border: 1px solid $xp-color--highlight;
 }
