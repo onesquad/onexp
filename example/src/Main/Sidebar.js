@@ -38,6 +38,16 @@ const Sidebar = () => {
           Modals
         </Text>
       </Link>
+      <Link to="/checkboxes" className="mb--sm">
+        <Text size="h3" color="white" weight="normal">
+          Checkboxes
+        </Text>
+      </Link>
+      <Link to="/radios">
+        <Text size="h3" color="white" weight="normal">
+          Radios
+        </Text>
+      </Link>
       <Link to="/select">
         <Text size="h3" color="white" weight="normal">
           Select

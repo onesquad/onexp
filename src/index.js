@@ -7,8 +7,10 @@ import Select from "./Components/Select";
 import Text from "./Components/Text";
 import Toastr from "./Components/Toastr";
 import Modal from "./Components/Modal";
-
+import Checkbox from "./Components/Checkbox";
+import Radio from "./Components/Radio";
 import { Icon } from "@blueprintjs/core";
+
 export {
   Avatar,
   Button,
@@ -19,5 +21,7 @@ export {
   Select,
   Text,
   Toastr,
-  Modal
+  Modal,
+  Checkbox,
+  Radio
 };
