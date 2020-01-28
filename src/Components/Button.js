@@ -12,6 +12,7 @@ const Button = ({
   icon,
   iconSize,
   iconColor,
+  iconPosition,
   disabled,
   hasUnderline,
   loading,
@@ -42,6 +43,7 @@ const Button = ({
 
   const isIconButton = type === "icon";
   const isLightButton = type === "light";
+  const iconRight = iconPosition === "right";
 
   const commonProps = {
     className: classnames(extraClass, { ...classList }),
@@ -68,18 +70,31 @@ const Button = ({
           ? "black"
           : "white"
       };
-      return (
-        <>
-          <Icon
-            {...iconProps}
-            className={classnames({
-              "mr--sm": !isIconButton,
-              "xp-button--inner-icon": true
-            })}
-          />
-          {text}
-        </>
+      const iconElement = (
+        <Icon
+          {...iconProps}
+          className={classnames({
+            "ml--sm": iconRight && !isIconButton,
+            "mr--sm": !iconRight && !isIconButton,
+            "xp-button--inner-icon": true
+          })}
+        />
       );
+      if (iconRight) {
+        return (
+          <>
+            {text}
+            {iconElement}
+          </>
+        );
+      } else {
+        return (
+          <>
+            {iconElement}
+            {text}
+          </>
+        );
+      }
     } else {
       return text;
     }

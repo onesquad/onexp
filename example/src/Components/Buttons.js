@@ -15,6 +15,7 @@ const Buttons = () => {
           text="Button with Icon"
           extraClass="mr--lg"
           icon="calendar"
+          iconPosition="right"
         />
         <Button
           type="primary"
