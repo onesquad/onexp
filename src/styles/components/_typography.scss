@@ -57,8 +57,20 @@
   color: $xp-color--text;
 }
 
+@mixin xp-text--black {
+  color: $xp-color--black;
+}
+
 @mixin xp-text--white {
   color: $xp-color--white;
+}
+
+@mixin xp-text--accent {
+  color: $xp-color--accent;
+}
+
+@mixin xp-text--danger {
+  color: $xp-color--danger;
 }
 
 @mixin xp-text--muted {
@@ -141,8 +153,20 @@
   @include xp-text--default;
 }
 
+.xp-text--black {
+  @include xp-text--black;
+}
+
 .xp-text--white {
   @include xp-text--white;
+}
+
+.xp-text--accent {
+  @include xp-text--accent;
+}
+
+.xp-text--danger {
+  @include xp-text--danger;
 }
 
 .xp-text--muted {

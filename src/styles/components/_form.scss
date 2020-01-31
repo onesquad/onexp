@@ -1,15 +1,12 @@
 .xp-form-group {
   display: block;
-  @include margin(0 0 16px);
 }
 
 .xp-form-label {
   display: block;
-  color: $xp-color--text-muted;
-  font-size: 12px;
+  color: $xp-color--black;
+  font-size: 14px;
   font-weight: $font-weight-regular;
-  text-transform: uppercase;
-  @include margin(0 0 4px 4px);
 }
 
 .xp-form-error {
@@ -19,18 +16,23 @@
 
 .xp-form-description {
   font-size: 14px;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-normal;
   color: $xp-color--text-muted;
   @include margin(4px 0 0 4px);
 }
 
 .xp-input {
+  min-width: 280px;
   display: block;
   font-size: 14px;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-normal;
   color: $xp-color--text;
   border-radius: $border-radius-base;
-  border: 1px solid $xp-color--border;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   transition: $xp-default-transition;
   @include padding(8px 12px);
 
@@ -39,13 +41,10 @@
   }
 
   &:focus {
-    border: 1px solid rgba($xp-color--primary-dark, 0.75);
-    transform: scale(1.02);
-    @include box-shadow(0px 3px 6px rgba(0, 0, 0, 0.1));
-  }
-
-  &:hover {
-    @include box-shadow($xp-shadow);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(58, 151, 212, 0.34) 0px 0px 0px 3px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   }
 }
 

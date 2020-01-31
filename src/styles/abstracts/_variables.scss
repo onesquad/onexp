@@ -2,10 +2,11 @@
 
 $xp-color--black: #1f2020;
 $xp-color--white: #ffffff;
+$xp-color--accent: #5568d4;
 $xp-color--primary: #4c51bf;
 $xp-color--primary-dark: #212529;
 $xp-color--primary-light: #667eea;
-$xp-color--text: #4a5568;
+$xp-color--text: #3c4257;
 $xp-color--text-muted: rgba($xp-color--text, 0.7);
 $xp-color--text-placeholder: #a0aec0;
 $xp-color--env: #f7fafc;
@@ -16,14 +17,14 @@ $xp-color--border: rgba($xp-color--primary-dark, 0.25);
 $xp-color--border-dark: rgba($xp-color--primary-dark, 0.35);
 $xp-color--success: #38a169;
 $xp-color--waring: #f2994a;
-$xp-color--danger: #e53e3e;
+$xp-color--danger: #cd3d64;
 
 // Animations
 $xp-default-transition: all 0.3s;
 
 // Font Family
 
-$base-font-family: "Inter", sans-serif;
+$base-font-family: "system-ui", "Roboto", "Helvetica", sans-serif;
 
 // Font Weight
 

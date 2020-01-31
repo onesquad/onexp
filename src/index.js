@@ -1,4 +1,5 @@
 import Avatar from "./Components/Avatar";
+import Box from "./Components/Box";
 import Button from "./Components/Button";
 import Card from "./Components/Card";
 import Dropdown from "./Components/Dropdown";
@@ -13,6 +14,7 @@ import { Icon } from "@blueprintjs/core";
 
 export {
   Avatar,
+  Box,
   Button,
   Card,
   Dropdown,
