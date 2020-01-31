@@ -1,5 +1,6 @@
 .xp-form-group {
   display: block;
+  @include margin(0 0 16px);
 }
 
 .xp-form-label {
