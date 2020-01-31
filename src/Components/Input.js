@@ -28,7 +28,6 @@ export default class Input extends Component {
     placeholder: propTypes.string,
     className: propTypes.string,
     wrapperClassName: propTypes.string,
-    boxClassName: propTypes.string,
     id: propTypes.string,
     error: propTypes.string,
     type: propTypes.oneOf(["text", "number", "email", "password"])
@@ -45,38 +44,35 @@ export default class Input extends Component {
       description,
       error,
       wrapperClassName,
-      boxClassName,
       style
     } = this.props;
     return (
-      <Box className={boxClassName}>
-        <div className={`xp-form-group ${wrapperClassName}`} style={style}>
-          {label && <span className="xp-form-label mb--sm">{label}</span>}
-          {prepend ? (
-            <div className="input-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="basic-addon3">
-                  {prepend}
-                </span>
-              </div>
-              {renderInput({ ...this.props, onChange: this.onChange })}
+      <div className={`xp-form-group ${wrapperClassName}`} style={style}>
+        {label && <span className="xp-form-label mb--sm">{label}</span>}
+        {prepend ? (
+          <div className="input-group">
+            <div className="input-group-prepend">
+              <span className="input-group-text" id="basic-addon3">
+                {prepend}
+              </span>
             </div>
-          ) : (
-            renderInput({ ...this.props, onChange: this.onChange })
-          )}
-          {error && (
-            <div className="fx-row mt--sm">
-              <i class="ri-error-warning-fill xp-text--danger mr--xs"></i>
-              <span className="xp-form-error">{error}</span>
-            </div>
-          )}
-          {description && (
-            <small id="emailHelp" className="xp-form-description">
-              {description}
-            </small>
-          )}
-        </div>
-      </Box>
+            {renderInput({ ...this.props, onChange: this.onChange })}
+          </div>
+        ) : (
+          renderInput({ ...this.props, onChange: this.onChange })
+        )}
+        {error && (
+          <div className="fx-row mt--sm">
+            <i class="ri-error-warning-fill xp-text--danger mr--xs"></i>
+            <span className="xp-form-error">{error}</span>
+          </div>
+        )}
+        {description && (
+          <small id="emailHelp" className="xp-form-description">
+            {description}
+          </small>
+        )}
+      </div>
     );
   }
 }
