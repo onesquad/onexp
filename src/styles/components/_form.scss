@@ -10,8 +10,14 @@
   font-weight: $font-weight-regular;
 }
 
+.xp-form-error-icon {
+  color: $xp-color--danger;
+}
+
 .xp-form-error {
   color: $xp-color--danger;
+  font-size: 14px;
+  font-weight: $font-weight-regular;
   text-transform: none;
 }
 

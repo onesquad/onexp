@@ -63,7 +63,7 @@ export default class Input extends Component {
         )}
         {error && (
           <div className="fx-row mt--sm">
-            <i class="ri-error-warning-fill xp-text--danger mr--xs"></i>
+            <i class="ri-error-warning-fill xp-form-error-icon mr--xs"></i>
             <span className="xp-form-error">{error}</span>
           </div>
         )}
