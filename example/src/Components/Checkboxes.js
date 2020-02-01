@@ -8,8 +8,9 @@ const Checkboxes = () => {
       <Text size="jumbo" weight="bold" extraClass="mb--lg">
         Checkbox
       </Text>
-      <div className="fx-row mb--lg">
-        <Checkbox error={error} label="User name" name="01" />
+      <div className="fx-col mb--lg">
+        <Checkbox error={error} label="I love Basecamp" />
+        <Checkbox large error={error} label="I love OneSquad" />
       </div>
     </div>
   );

@@ -6,7 +6,6 @@
 // Rubik font @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
 // San Fransisco Font @import url("https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css");
 @import url("https://rsms.me/inter/inter.css");
-@import "~@blueprintjs/core/lib/css/blueprint.css";
 @import url("https://cdn.remixicon.com/releases/v2.1.0/remixicon.css");
 
 // Abstracts
@@ -36,6 +35,10 @@
 //Helpers
 @import "abstracts/flex_utilities";
 @import "abstracts/utilities";
+
+//Blueprint overrides
+@import "abstracts/blueprint_overrides";
+@import "~@blueprintjs/core/src/blueprint";
 
 body {
   * {

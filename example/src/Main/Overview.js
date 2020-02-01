@@ -1,4 +1,5 @@
 import React from "react";
+import Alerts from "../Components/Alerts";
 import Avatars from "../Components/Avatars";
 import Dropdowns from "../Components/Dropdowns";
 import Buttons from "../Components/Buttons";
@@ -8,12 +9,14 @@ import Cards from "../Components/Cards";
 import Select from "../Components/Select";
 import Checkboxes from "../Components/Checkboxes";
 import Radios from "../Components/Radios";
-import { Route, Switch } from "react-router-dom";
+import Switch from "../Components/Switch";
+import { Route, Switch as RouterSwitch } from "react-router-dom";
 
 const Overview = () => {
   return (
     <div className="fx-grow-1 wptb--sm wplr--lg">
-      <Switch>
+      <RouterSwitch>
+        <Route exact path="/alerts" component={Alerts} />
         <Route exact path="/avatars" component={Avatars} />
         <Route exact path="/buttons" component={Buttons} />
         <Route path="/cards" component={Cards} />
@@ -23,7 +26,8 @@ const Overview = () => {
         <Route path="/select" component={Select} />
         <Route path="/checkboxes" component={Checkboxes} />
         <Route path="/radios" component={Radios} />
-      </Switch>
+        <Route path="/switch" component={Switch} />
+      </RouterSwitch>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Radio, Text } from "onexp";
+import { RadioGroup, Radio, Text } from "onexp";
 
 const Radios = () => {
   return (
@@ -8,11 +8,11 @@ const Radios = () => {
         Radio
       </Text>
       <div className="fx-row mb--lg">
-        <Radio>
-          <Radio.Item name="branding" label="1" />
-          <Radio.Item name="branding" label="2" />
-          <Radio.Item name="branding" label="3" />
-        </Radio>
+        <RadioGroup>
+          <Radio name="branding" label="OneSquad" />
+          <Radio name="branding" label="Basecamp" />
+          <Radio name="branding" label="Slack" />
+        </RadioGroup>
       </div>
     </div>
   );

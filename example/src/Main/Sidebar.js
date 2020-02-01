@@ -8,6 +8,11 @@ const Sidebar = () => {
       <Text size="h1" color="white" weight="bold" extraClass="mb--lg">
         OneSquad
       </Text>
+      <Link to="/alerts" className="mb--sm">
+        <Text size="h3" color="white" weight="normal">
+          Alerts
+        </Text>
+      </Link>
       <Link to="/avatars" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Avatars
@@ -43,14 +48,19 @@ const Sidebar = () => {
           Checkboxes
         </Text>
       </Link>
-      <Link to="/radios">
+      <Link to="/radios" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Radios
         </Text>
       </Link>
-      <Link to="/select">
+      <Link to="/select" className="mb--sm">
         <Text size="h3" color="white" weight="normal">
           Select
+        </Text>
+      </Link>
+      <Link to="/switch" className="mb--sm">
+        <Text size="h3" color="white" weight="normal">
+          Switch
         </Text>
       </Link>
     </div>
