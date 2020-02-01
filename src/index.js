@@ -16,7 +16,9 @@ import {
   Tag,
   RadioGroup,
   Radio,
-  Checkbox
+  Checkbox,
+  Tab,
+  Tabs
 } from "@blueprintjs/core";
 import { FocusStyleManager } from "@blueprintjs/core";
 FocusStyleManager.onlyShowFocusOnTabs();
@@ -38,5 +40,7 @@ export {
   Modal,
   Checkbox,
   RadioGroup,
-  Radio
+  Radio,
+  Tab,
+  Tabs
 };
