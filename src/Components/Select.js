@@ -54,15 +54,7 @@ export default class OneSelect extends Component {
     } = this.props;
     return (
       <div className={"xp-select-container xp-form-group"} style={style}>
-        {(label || error) && (
-          <TextTransition
-            className={classnames({
-              "xp-form-label": true,
-              "xp-form-error": error
-            })}
-            text={error || label}
-          />
-        )}
+        {label && <span className="xp-form-label mb--sm">{label}</span>}
         <Select
           components={{
             DropdownIndicator,
@@ -74,6 +66,12 @@ export default class OneSelect extends Component {
           classNamePrefix="xp"
           isSearchable={false}
         />
+        {error && (
+          <div className="fx-row mt--sm">
+            <i class="ri-error-warning-fill xp-form-error-icon mr--xs"></i>
+            <span className="xp-form-error">{error}</span>
+          </div>
+        )}
         {description && (
           <small id="emailHelp" className="xp-form-description">
             {description}
