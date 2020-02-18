@@ -15,7 +15,12 @@ const Modals = () => {
       </Text>
       <div className="grid grid-nogutter">
         <div className="col col-3">
-          <Select options={options} value={value} onChange={setValue} />
+          <Select
+            options={options}
+            value={value}
+            onChange={setValue}
+            label="Which flavor do you like the most?"
+          />
         </div>
       </div>
     </div>

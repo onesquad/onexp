@@ -57,7 +57,7 @@ export default class OneSelect extends Component {
         {(label || error) && (
           <TextTransition
             className={classnames({
-              "xp-form-label": true,
+              "xp-form-label mb--xs": true,
               "xp-form-error": error
             })}
             text={error || label}
