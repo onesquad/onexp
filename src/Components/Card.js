@@ -27,13 +27,12 @@ export default class Card extends Component {
     return (
       <div className={classnames("xp-card--wrapper", extraClass)}>
         {title && (
-          <Text
-            size="h2"
-            weight="semibold"
-            extraClass="pb--sm wmb--sm border-bottom"
-          >
-            {title}
-          </Text>
+          <>
+            <Text size="h2" weight="semibold">
+              {title}
+            </Text>
+            <div className="xp--divider mtb--sm"></div>
+          </>
         )}
         {children}
       </div>
