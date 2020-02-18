@@ -6,9 +6,9 @@ import Select, { components } from "react-select";
 
 const DropdownIndicator = props => {
   return (
-    <components.DropdownIndicator {...props}>
-      <i class="ri-arrow-down-s-fill ri-lg"></i>
-    </components.DropdownIndicator>
+    <svg className="xp__dropdown">
+      <path d="M11.891 9.992a1 1 0 1 1 1.416 1.415l-4.3 4.3a1 1 0 0 1-1.414 0l-4.3-4.3A1 1 0 0 1 4.71 9.992l3.59 3.591 3.591-3.591zm0-3.984L8.3 2.417 4.709 6.008a1 1 0 0 1-1.416-1.415l4.3-4.3a1 1 0 0 1 1.414 0l4.3 4.3a1 1 0 1 1-1.416 1.415z"></path>
+    </svg>
   );
 };
 
@@ -53,7 +53,7 @@ export default class OneSelect extends Component {
       style
     } = this.props;
     return (
-      <div className={"xp-select-container xp-form-group"} style={style}>
+      <div className="xp-select-container" style={style}>
         {(label || error) && (
           <TextTransition
             className={classnames({

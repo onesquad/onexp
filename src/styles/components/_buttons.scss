@@ -3,9 +3,9 @@
   @include flex-direction(row);
   @include justify-content(space-between);
   @include align-items(center);
-  padding: 6px 18px;
+  padding: 3px 8px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22.4px;
   font-weight: $font-weight-regular;
   transition: $xp-default-transition;
   border-radius: $border-radius-base;
@@ -22,10 +22,6 @@
   &:hover {
     @include box-shadow($xp-shadow-lg);
     transition: $xp-default-transition;
-    .xp-button--inner-icon {
-      transform: scale(1.1);
-      transition: $xp-default-transition;
-    }
   }
 
   &:active,
@@ -163,7 +159,7 @@
 }
 
 .xp-button--inner-icon {
-  transition: $xp-default-transition;
+  @extend .mlr--xs;
 }
 
 .xp-button--loading {

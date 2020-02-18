@@ -92,6 +92,7 @@ class Modal extends React.Component {
       cancelText,
       containerExtraClass,
       wrapperExtraClass,
+      subHeading,
       ...otherProps
     } = this.props;
     const { closeTriggered } = this.state;
@@ -152,33 +153,32 @@ class Modal extends React.Component {
               {isLoading && <ModalLoader />}
               {header && (
                 <div className="xp-modal--header">
-                  <Text size="h1" weight="semibold" color="grey" family="serif">
+                  <Text size="h2" weight="semibold">
                     {header}
                   </Text>
+                  {subHeading}
                 </div>
               )}
               {this.props.children}
               {hasFooter && (
                 <div className="xp-modal--footer">
-                  <div className="fx-row">
-                    <Button
-                      type="primary"
-                      isLoading={submitIsLoading}
-                      text={submitText}
-                      onClick={() => onSubmit()}
-                      isDisabled={disableSubmit}
-                      extraClass="mx--zero mr--lg"
-                    />
+                  <div className="fx-row fx-jc--end">
                     {(!hideCloseButton || onCancel) && (
                       <Button
-                        type="link"
+                        type="light"
                         text={cancelText || "Cancel"}
                         onClick={() =>
                           onCancel ? onCancel() : this.handleClose()
                         }
-                        hasUnderline
                       />
                     )}
+                    <Button
+                      isLoading={submitIsLoading}
+                      text={submitText}
+                      onClick={onSubmit}
+                      isDisabled={disableSubmit}
+                      extraClass="mx--zero ml--lg"
+                    />
                   </div>
                 </div>
               )}
