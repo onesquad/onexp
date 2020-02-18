@@ -74,6 +74,12 @@ export default class OneSelect extends Component {
           classNamePrefix="xp"
           isSearchable={false}
         />
+        {error && (
+          <div className="fx-row mt--sm">
+            <i class="ri-error-warning-fill xp-form-error-icon mr--xs"></i>
+            <span className="xp-form-error">{error}</span>
+          </div>
+        )}
         {description && (
           <small id="emailHelp" className="xp-form-description">
             {description}
