@@ -42,7 +42,7 @@ const Button = ({
   };
 
   const isIconButton = type === "icon";
-  const isLightButton = type === "light";
+  const isLightButton = type === "light" || type === "light-outline";
   const iconRight = iconPosition === "right";
 
   const commonProps = {

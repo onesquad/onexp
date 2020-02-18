@@ -84,6 +84,36 @@
   }
 }
 
+.xp-button.xp-button--light-outline {
+  color: $xp-color--text;
+  background-color: $xp-color--white;
+  box-shadow: 0 0 0 1px rgba(42, 47, 69, 0.1),
+    0 2px 5px 0 rgba(42, 47, 69, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+    0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $xp-color--black;
+    transform: none;
+    box-shadow: 0 0 0 1px rgba(42, 47, 69, 0.1),
+      0 2px 5px 0 rgba(42, 47, 69, 0.1), 0 3px 9px 0 rgba(42, 47, 69, 0.08),
+      0 1px 1.5px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &.xp-button--loading {
+    @include box-shadow(none);
+    color: transparent;
+    border: thin solid $xp-color--highlight;
+    background-color: $xp-color--highlight;
+  }
+
+  .xp-button--loader__dots {
+    span {
+      background-color: $xp-color--black;
+    }
+  }
+}
+
 .xp-button.xp-button--light {
   color: $xp-color--text;
   background-color: transparent;

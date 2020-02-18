@@ -43,6 +43,25 @@ const Buttons = () => {
         <Button type="dark" text="Dark Button" extraClass="mr--lg" loading />
       </div>
       <div className="fx-row mb--lg">
+        <Button
+          type="light-outline"
+          text="Light outline button"
+          extraClass="mr--lg"
+        />
+        <Button
+          type="light-outline"
+          text="Button with Icon"
+          extraClass="mr--lg"
+          icon="calendar"
+        />
+        <Button
+          type="light"
+          text="Light outline button"
+          extraClass="mr--lg"
+          loading
+        />
+      </div>
+      <div className="fx-row mb--lg">
         <Button type="light" text="Light Button" extraClass="mr--lg" />
         <Button
           type="light"
