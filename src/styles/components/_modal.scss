@@ -82,10 +82,6 @@
       transform: translateY(-50%);
     }
 
-    &.xp-modal--container__footer {
-      @include padding(0 0 112px);
-    }
-
     &.xp-modal--container__loading {
       overflow: hidden;
 
