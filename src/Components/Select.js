@@ -50,7 +50,8 @@ export default class OneSelect extends Component {
       onChange,
       error,
       wrapperClassName,
-      style
+      style,
+      ...otherProps
     } = this.props;
     return (
       <div className="xp-select-container" style={style}>
@@ -73,6 +74,7 @@ export default class OneSelect extends Component {
           onChange={onChange}
           classNamePrefix="xp"
           isSearchable={false}
+          {...otherProps}
         />
         {error && (
           <div className="fx-row mt--sm">
